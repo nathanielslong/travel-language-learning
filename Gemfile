@@ -15,6 +15,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 gem 'simple_form'
+gem 'faker'
+gem 'figaro'
+gem 'aws-sdk'
+gem 'paperclip'
+gem 'devise_security_extension'
+gem 'rails_email_validator'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
