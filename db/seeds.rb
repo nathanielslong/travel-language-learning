@@ -40,3 +40,7 @@ end
 languages.each do |language|
   Language.create(name: language)
 end
+
+users.each do |user|
+  Userlang.create(user_id: user.id, language_id: rand(1..4))
+end
