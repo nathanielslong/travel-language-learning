@@ -3,5 +3,5 @@ class User < ApplicationRecord
   has_many :userlangs
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :trackable, :secure_validatable
 end
