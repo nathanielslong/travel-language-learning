@@ -10,7 +10,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string :desired_language
       t.date :birthday
       t.string :gender
-      t.boolean :is_admin
+      t.boolean :is_admin, default: false
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
