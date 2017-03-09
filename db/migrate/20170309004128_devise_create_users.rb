@@ -7,7 +7,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string :origin
       t.string :destination
       t.string :native_language
-      t.string :desired_language
       t.date :birthday
       t.string :gender
       t.boolean :is_admin, default: false
