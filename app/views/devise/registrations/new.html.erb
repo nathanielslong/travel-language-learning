@@ -4,9 +4,14 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :first_name, required: true, autofocus: true, pattern: '/^[A-z]+$/' %>
+    <%= f.input :first_name, required: true, autofocus: true %>
     <%= f.input :last_name, required: true %>
     <%= f.input :email, required: true %>
+    <%= f.input :origin, input_html: { id: 'origin' }, required: true, placeholder: "Start typing a location..." %>
+    <%= f.input :destination, input_html: { id: 'destination' }, required: true, placeholder: "Start typing a location..." %>
+    <%= f.input :native_language, required: true %>
+    <%= f.input :birthday, required: true %>
+    <%= f.input :gender, required: true %>
     <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
     <%= f.input :password_confirmation, required: true %>
   </div>
