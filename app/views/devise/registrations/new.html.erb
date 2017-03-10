@@ -71,7 +71,7 @@
                 <div class="col-md-6">
                   <div class="input-group">
                     <span class="input-group-addon"><%= icon('key') %></span></span>
-                  <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), label: false, placeholder: "Password (at least one number, lowercase letter, and capital)" %>
+                  <%= f.input :password, required: true, label: false, placeholder: "Password (at least 6 characters)" %>
                   </div>
                 </div>
 
