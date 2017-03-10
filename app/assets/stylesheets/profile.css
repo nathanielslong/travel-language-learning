@@ -4,8 +4,8 @@
 }
 
 body {
-	background-color: #FBEEE6;
-	background-image: url("http://www.voglioviverecosi.com/wp-content/uploads/languages.jpg");
+	background-color: #FBEEE6 !important;
+	background-image: url("../assets/images/languages.png");
 	background-repeat: no-repeat;
 	background-size: 43%;
 	background-position: 410px -25px;
