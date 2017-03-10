@@ -1,0 +1,79 @@
+.container {
+	margin-top: 20px;
+	text-align: center;
+}
+
+body {
+	background-color: #FBEEE6;
+	background-image: url("http://www.voglioviverecosi.com/wp-content/uploads/languages.jpg");
+	background-repeat: no-repeat;
+	background-size: 43%;
+	background-position: 410px -25px;
+}
+
+.user_image {
+	border-radius: 10px;
+	width: 150px;
+}
+
+.thumbnail {
+	width: 250px;
+}
+
+li {
+	color: rgb(0,157,203);
+	font-family: 'Baloo Bhaina', cursive;
+	text-align: left;
+}
+
+#user_name {
+	font-family: 'Baloo Bhaina', cursive;
+	margin-left: 20px;
+}
+
+.progress {
+	margin-top: 10px;
+	position: relative;
+	width: 250px;
+}
+
+#current_progress {
+	font-family: 'Baloo Bhaina', cursive;
+}
+
+/*.col1, .col2, .col3 {
+	border: 1px solid black;
+}*/
+
+.resume_game_button {
+/*	background-color: rgb(0,157,203)!important;*/
+	text-shadow: 5px 5px 8px black;
+	font-size: 25px!important;
+	font-family: 'Sigmar One', cursive;
+	position: relative;	
+	top: 165px;
+	width: 450px!important;
+	height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
