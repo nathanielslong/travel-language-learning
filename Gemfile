@@ -21,6 +21,7 @@ gem 'aws-sdk'
 gem 'paperclip'
 gem 'devise_security_extension'
 gem 'rails_email_validator'
+gem 'font-awesome-sass'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
