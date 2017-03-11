@@ -1,100 +1,101 @@
-<%# Make check if correct before page redirect %>
+<div ng-app="myFormApp" ng-controller="mainController">
+  <div id="fullscreen_bg" class="fullscreen_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h2 class="text-center">Sign up</h2>
 
-<div id="fullscreen_bg" class="fullscreen_bg">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h2 class="text-center">Sign up</h2>
+              <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                <%= f.error_notification %>
 
-            <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-              <%= f.error_notification %>
+                <div class="form-inputs">
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span class="input-group-addon"><%= icon('user') %></span>
+                      <%= f.input :first_name, required: true, autofocus: true, placeholder: "First name", label: false, input_html: {'ng-model' => 'firstName', 'ng-pattern' => 'nameRegex'} %>
+                      <span class="input-group-addon" ng-show="myFormApp.first_name.$valid"></span>
+                    </div>
+                  </div>
 
-              <div class="form-inputs">
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <span class="input-group-addon"><%= icon('user') %></span>
-                    <%= f.input :first_name, required: true, autofocus: true, placeholder: "First name", label: false %>
+
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span class="input-group-addon"><%= icon('user') %></span>
+                      <%= f.input :last_name, placeholder: "Last name", required: true, label: false %>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span class="input-group-addon"><%= icon('envelope') %></span>
+                      <%= f.input :email, placeholder: "E-mail", required: true, label: false %>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span class="input-group-addon"><%= icon('home') %></span>
+                      <%= f.input :native_language, required: true, placeholder: "Native language", label: false %>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span class="input-group-addon"><%= icon('home') %></span>
+                      <%= f.input :origin, input_html: { id: 'origin' }, required: true, placeholder: "Origin location...", label: false %>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span class="input-group-addon"><%= icon('plane') %></span>
+                      <%= f.input :destination, input_html: { id: 'destination' }, required: true, placeholder: "Destination location...", label: false %>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"><%= icon('birthday-cake') %></span></span>
+                    <%= f.input :birthday, as: :date, start_year: Date.today.year - 90, 
+                      end_year: Date.today.year - 12, required: true,  label: false %>
+                  </div>
+                  </div>
+
+                  <div class="col-md-6 col-md-offset-right-6">
+                    <div class="input-group">
+                      <span class="input-group-addon"><%= icon('flask') %></span></span>
+                    <%= f.input :gender, required: true, placeholder: "Gender", label: false %>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span class="input-group-addon"><%= icon('key') %></span></span>
+                    <%= f.input :password, required: true, label: false, placeholder: "Password (at least 6 characters)" %>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span class="input-group-addon"><%= icon('key') %></span></span>
+                    <%= f.input :password_confirmation, required: true, label: false, placeholder: "Confirm password" %>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-actions">
+                      <%= f.button :submit, "Submit", class: "btn btn-md btn-primary btn-block", data: { disable_with: "Submitting..." } %>
+                    </div>
                   </div>
                 </div>
-
-
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <span class="input-group-addon"><%= icon('user') %></span>
-                    <%= f.input :last_name, placeholder: "Last name", required: true, label: false %>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <span class="input-group-addon"><%= icon('envelope') %></span>
-                    <%= f.input :email, placeholder: "E-mail", required: true, label: false %>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <span class="input-group-addon"><%= icon('home') %></span>
-                    <%= f.input :native_language, required: true, placeholder: "Native language", label: false %>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <span class="input-group-addon"><%= icon('home') %></span>
-                    <%= f.input :origin, input_html: { id: 'origin' }, required: true, placeholder: "Origin location...", label: false %>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <span class="input-group-addon"><%= icon('plane') %></span>
-                    <%= f.input :destination, input_html: { id: 'destination' }, required: true, placeholder: "Destination location...", label: false %>
-                  </div>
-                </div>
-
-                <div class="col-md-12">
-                  <div class="input-group">
-                    <span class="input-group-addon"><%= icon('birthday-cake') %></span></span>
-                  <%= f.input :birthday, as: :date, start_year: Date.today.year - 90, 
-                    end_year: Date.today.year - 12, required: true,  label: false %>
-                </div>
-                </div>
-
-                <div class="col-md-6 col-md-offset-right-6">
-                  <div class="input-group">
-                    <span class="input-group-addon"><%= icon('flask') %></span></span>
-                  <%= f.input :gender, required: true, placeholder: "Gender", label: false %>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <span class="input-group-addon"><%= icon('key') %></span></span>
-                  <%= f.input :password, required: true, label: false, placeholder: "Password (at least 6 characters)" %>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <span class="input-group-addon"><%= icon('key') %></span></span>
-                  <%= f.input :password_confirmation, required: true, label: false, placeholder: "Confirm password" %>
-                  </div>
-                </div>
-
-                <div class="col-md-12">
-                  <div class="form-actions">
-                    <%= f.button :submit, "Submit", class: "btn btn-md btn-primary btn-block", data: { disable_with: "Submitting..." } %>
-                  </div>
-                </div>
-              </div>
-            <% end %>
+              <% end %>
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 </div>

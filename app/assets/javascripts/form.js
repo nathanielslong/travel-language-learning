@@ -11,3 +11,10 @@ function destinationAutoComplete() {
 google.maps.event.addDomListener(window, 'load', originAutoComplete);
 
 google.maps.event.addDomListener(window, 'load', destinationAutoComplete);
+
+var myFormApp = angular.module('myFormApp', []);
+
+myFormApp.controller('mainController', function($scope) {
+  $scope.nameRegex = '\\w+';
+});
+
