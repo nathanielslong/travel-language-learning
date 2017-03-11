@@ -1,3 +1,5 @@
+<%# Make check if correct before page redirect %>
+
 <div id="fullscreen_bg" class="fullscreen_bg">
   <div class="container">
     <div class="row">
@@ -84,7 +86,7 @@
 
                 <div class="col-md-12">
                   <div class="form-actions">
-                    <%= f.button :submit, "Submit", class: "btn btn-md btn-primary btn-block" %>
+                    <%= f.button :submit, "Submit", class: "btn btn-md btn-primary btn-block", data: { disable_with: "Submitting..." } %>
                   </div>
                 </div>
               </div>
