@@ -45,10 +45,10 @@ users.each do |user|
   Userlang.create(user_id: user.id, language_id: rand(1..4))
 end
 
-rand3 = rand(1..users.count)
 
-# 3.times do
-#   users.each do |user|
-#     user.conversations.create(recipient_id: rand3)
-#   end
-# end
+3.times do
+  rand3 = rand(1..users.count)
+  users.each do |user|
+    user.conversations.create(recipient_id: rand3)
+  end
+end
