@@ -52,3 +52,9 @@ end
     user.conversations.create(recipient_id: rand3)
   end
 end
+
+conversations = Conversation.all
+
+conversations.each do |conversation|
+  conversation.messages.create(body: Faker::Lorem.paragraph)
+end
