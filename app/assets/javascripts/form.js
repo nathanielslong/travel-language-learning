@@ -16,6 +16,7 @@ var myFormApp = angular.module('myFormApp', []);
 
 myFormApp.controller('mainController', function($scope) {
   $scope.firstName= '';
-  $scope.nameRegex = '^[a-zA-Z]+$';
+  $scope.email = '';
+  $scope.nameRegex = /^[a-zA-Z]+$/i;
 });
 
