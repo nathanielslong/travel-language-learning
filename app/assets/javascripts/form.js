@@ -15,6 +15,7 @@ google.maps.event.addDomListener(window, 'load', destinationAutoComplete);
 var myFormApp = angular.module('myFormApp', []);
 
 myFormApp.controller('mainController', function($scope) {
-  $scope.nameRegex = '\\w+';
+  $scope.firstName= '';
+  $scope.nameRegex = '^[a-zA-Z]+$';
 });
 
