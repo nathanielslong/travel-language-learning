@@ -1,0 +1,36 @@
+.walk {
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Walk_Right.svg");
+
+  animation: play .8s steps(6) infinite,  
+  Walk_Right 5s linear infinite alternate; 
+} 
+
+.container {
+  background: #d8d8d8; 
+}   
+//     -webkit-animation: play 2s steps(5) infinite;
+//        -moz-animation: play 2s steps(5) infinite;
+//         -ms-animation: play 2s steps(5) infinite;
+//          -o-animation: play 2s steps(5) infinite;
+//             animation: play 2s steps(5) infinite;
+// }
+
+
+
+@keyframes play {
+ from { background-position:    0px; }
+ to { background-position: -660px; }
+}
+
+
+@keyframes Walk_Right {
+  0%{
+    transform: translate(0, 0);
+  }
+  100%  {
+    transform: translate(600px, 0);
+  }
+}
+
