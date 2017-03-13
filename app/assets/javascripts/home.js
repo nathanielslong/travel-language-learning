@@ -1,6 +1,6 @@
 $(window).load( function() {
   $('#myModal').modal('show');
-  initMap(0, 0);
+  initMap(61, 0);
 
   $("#pac-input").keyup(function(event){
     if(event.keyCode == 13){
@@ -14,11 +14,29 @@ $(window).load( function() {
     $('#secondInput').val(input);
     codeAddress('pac-input')
   })
-} )
+
+  $("#secondInput").keyup(function(event){
+    if(event.keyCode == 13){
+      $("#secondButton").click();
+    }
+  });
+
+  $('#searchButton').click(function() {
+    codeAddress('secondInput');
+  })
+})
 
 function initMap(lat, lng) {
+
+  if(lat == undefined) {
+    lat = 0;
+  }
+
+  if(lng == undefined) {
+    lng = 0;
+  }
+
   var location = {lat: lat, lng: lng};
-  console.log(location);
 
   var map = new google.maps.Map(document.getElementById('map'), {
     center: location,
