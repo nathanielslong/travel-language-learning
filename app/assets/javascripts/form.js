@@ -15,8 +15,15 @@ function locationAutoComplete() {
   var autocomplete = new google.maps.places.Autocomplete(input);
 }
 
+function secondLocAuto() {
+  var input = document.getElementById('secondInput');
+  var autocomplete = new google.maps.places.Autocomplete(input);
+}
+
 google.maps.event.addDomListener(window, 'load', originAutoComplete);
 
 google.maps.event.addDomListener(window, 'load', destinationAutoComplete);
 
 google.maps.event.addDomListener(window, 'load', locationAutoComplete);
+
+google.maps.event.addDomListener(window, 'load', secondLocAuto);

@@ -9,7 +9,7 @@ $(window).load( function() {
   $('#modalButton').click(function() {
     $('.close').click();
     var input = $('#pac-input').val();
-    console.log(input);
+    $('#secondInput').val(input);
   })
 } )
 
