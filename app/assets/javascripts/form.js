@@ -11,7 +11,7 @@ function destinationAutoComplete() {
 }
 
 function locationAutoComplete() {
-  var input = document.getElementById('myLocation');
+  var input = document.getElementById('pac-input');
   var autocomplete = new google.maps.places.Autocomplete(input);
 }
 

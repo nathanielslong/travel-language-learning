@@ -1,7 +1,12 @@
 <div class="fullscreen_bg">
 </div>
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+<div class="container body-panel">
+  <br>
+  <label for="location">Destination: </label>
+  <input type="text" id="pac-input" />
+</div>
 
+<%# Modal %>
 <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -10,12 +15,15 @@
         <h3>Choose your Destination</h3>
       </div>
       <div class="modal-body">
-        <input type="text" id="myLocation">
+        <p>Travelingo is a site to help you prepare to travel by giving you a short trip through a language. Enter a location below and we'll let you know if we offer its language for instruction.</p>
+        <p> Be sure to include the country!</p>
+        <input type="text" id="pac-input" />
+        <button type="button" class="btn" id="modalButton">Check the language</button>
       </div>
       <div class="modal-footer">
-        <div class="centering">
+        <div>
           <%= link_to "Login", user_session_path, method: :get %>
-          <span> | </span>
+          <span>|</span>
           <%= link_to "Sign up", new_user_registration_path, method: :get %>
         </div>
       </div>

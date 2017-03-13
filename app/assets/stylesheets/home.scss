@@ -11,7 +11,7 @@
   background-repeat:repeat;
 }
 
-#myLocation {
+#pac-input {
   margin: 0 auto;
   width: 200px;
 }
@@ -26,7 +26,6 @@
 
 .pac-container {
   z-index: 10000 !important;
-  width: auto !important;
   display: block !important;
 }
 
@@ -134,4 +133,31 @@ code{
   margin: 0 auto;
   text-align: center;
   width: 500px;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.body-panel {
+  background: rgba(256, 256, 256, 0.6);
+  text-align: center;
+  height: 80%;
+  width: 80%;
+  margin-top: 50px;
 }
