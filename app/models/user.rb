@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_one :profile
+
   has_many :userlangs
   has_many :messages
 

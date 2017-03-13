@@ -56,5 +56,6 @@ end
 conversations = Conversation.all
 
 conversations.each do |conversation|
-  conversation.messages.create(body: Faker::Lorem.paragraph)
+  rand4 = rand(1..users.count)
+  conversation.messages.create(body: Faker::Lorem.paragraph, user_id: rand4)
 end
