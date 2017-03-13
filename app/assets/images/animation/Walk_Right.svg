@@ -4,7 +4,7 @@
     <title>Walk_Right</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="110" height="171"></rect>
+        <rect id="path-1" x="0" y="0" width="110" height="181"></rect>
         <polygon id="path-3" points="54.609 54.3911 54.609 0.3911 0.6091 0.3911 0.6091 54.3911 54.609 54.3911"></polygon>
         <path d="M0.214436776,19.5756504 C0.214436776,19.309356 0.46356187,18.5102292 0.46356187,18.5102292 L30.8268644,18.5102292 C30.8268644,18.5102292 31.093335,19.2851317 31.093335,19.5756504 C31.093335,19.9954125 30.8268644,20.6410715 30.8268644,20.6410715 L0.46356187,20.6410715 C0.46356187,20.6410715 0.214436776,20.0196368 0.214436776,19.5756504 Z" id="path-5"></path>
         <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30.8788982" height="2.13084232" fill="white">
@@ -268,7 +268,7 @@
         <mask id="mask-144" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="9.92327381" height="15.2541211" fill="white">
             <use xlink:href="#path-143"></use>
         </mask>
-        <rect id="path-145" x="0" y="0" width="110" height="171"></rect>
+        <rect id="path-145" x="0" y="0" width="110" height="181"></rect>
         <polygon id="path-147" points="54.609 54.3911 54.609 0.3911 0.6091 0.3911 0.6091 54.3911 54.609 54.3911"></polygon>
         <path d="M0.214436776,19.5756504 C0.214436776,19.309356 0.46356187,18.5102292 0.46356187,18.5102292 L30.8268644,18.5102292 C30.8268644,18.5102292 31.093335,19.2851317 31.093335,19.5756504 C31.093335,19.9954125 30.8268644,20.6410715 30.8268644,20.6410715 L0.46356187,20.6410715 C0.46356187,20.6410715 0.214436776,20.0196368 0.214436776,19.5756504 Z" id="path-149"></path>
         <mask id="mask-150" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30.8788982" height="2.13084232" fill="white">
@@ -334,7 +334,7 @@
         <mask id="mask-180" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="9.92327381" height="15.2541211" fill="white">
             <use xlink:href="#path-179"></use>
         </mask>
-        <rect id="path-181" x="0" y="0" width="110" height="171"></rect>
+        <rect id="path-181" x="0" y="0" width="110" height="181"></rect>
         <polygon id="path-183" points="54.609 54.3911 54.609 0.3911 0.6091 0.3911 0.6091 54.3911 54.609 54.3911"></polygon>
         <path d="M0.214436776,19.5756504 C0.214436776,19.309356 0.46356187,18.5102292 0.46356187,18.5102292 L30.8268644,18.5102292 C30.8268644,18.5102292 31.093335,19.2851317 31.093335,19.5756504 C31.093335,19.9954125 30.8268644,20.6410715 30.8268644,20.6410715 L0.46356187,20.6410715 C0.46356187,20.6410715 0.214436776,20.0196368 0.214436776,19.5756504 Z" id="path-185"></path>
         <mask id="mask-186" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30.8788982" height="2.13084232" fill="white">
@@ -403,13 +403,13 @@
     </defs>
     <g id="Robert" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Walk_Right">
-            <g id="WR6" transform="translate(550.000000, 10.000000)">
+            <g id="WR6" transform="translate(550.000000, 0.000000)">
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
                 <use id="Mask" fill-opacity="0.350600091" fill="#D8D8D8" xlink:href="#path-1"></use>
                 <g mask="url(#mask-2)">
-                    <g transform="translate(-19.000000, 0.000000)">
+                    <g transform="translate(-19.000000, 10.000000)">
                         <g id="Person-8">
                             <path d="M81.7101,107.5831 L81.7101,93.5831 L91.6091,93.5831 L91.6091,107.5831 C91.6091,110.8971 89.3933738,113.5831 86.6596,113.5831 C83.9258262,113.5831 81.7101,110.8971 81.7101,107.5831 Z" id="Fill-10-Copy" fill="#F8D4AA"></path>
                             <path d="M46.7101,107.5831 L46.7101,93.5831 L56.6091,93.5831 L56.6091,107.5831 C56.6091,110.8971 54.3933738,113.5831 51.6596,113.5831 C48.9258262,113.5831 46.7101,110.8971 46.7101,107.5831 Z" id="Fill-10-Copy" fill="#F8D4AA"></path>
@@ -1002,13 +1002,13 @@
                     </g>
                 </g>
             </g>
-            <g id="WR2" transform="translate(110.000000, 10.000000)">
+            <g id="WR2" transform="translate(110.000000, 0.000000)">
                 <mask id="mask-146" fill="white">
                     <use xlink:href="#path-145"></use>
                 </mask>
                 <use id="Mask" fill-opacity="0.43138587" fill="#D8D8D8" xlink:href="#path-145"></use>
                 <g mask="url(#mask-146)">
-                    <g transform="translate(-18.000000, -2.000000)">
+                    <g transform="translate(-18.000000, 8.000000)">
                         <g id="Person-8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <path d="M79.5058192,110.224927 L79.5058192,96.2249271 L90.0846665,97.1097293 C90.0846665,97.1097293 88.8374071,100.903381 88.8374071,103.199627 C88.8374071,105.495874 89.4048192,110.224927 89.4048192,110.224927 C89.4048192,113.538927 87.189093,116.224927 84.4553192,116.224927 C81.7215453,116.224927 79.5058192,113.538927 79.5058192,110.224927 Z" id="Fill-10-Copy" fill="#F8D4AA" transform="translate(84.795243, 106.224927) rotate(10.000000) translate(-84.795243, -106.224927) "></path>
                             <path d="M62.4171923,72.6891 C52.9123498,75.1968704 47.3981975,80.7010723 47.3981975,89.0695147 L47.3981975,95.0198336 C47.3981975,96.781569 47.1938462,98.2099384 49.1479615,98.2099384 L88.0710385,98.2099384 C90.0251538,98.2099384 89.0612667,95.781569 89.0612667,94.0198336 L89.0612667,87.7018846 C89.0612667,79.3334422 83.7434573,74.1986058 74.8018077,72.6891 L62.4171923,72.6891 Z" id="Fill-1" fill="#F8D4AA"></path>
@@ -1151,13 +1151,13 @@
                     </g>
                 </g>
             </g>
-            <g id="WR1" transform="translate(0.000000, 10.000000)">
+            <g id="WR1">
                 <mask id="mask-182" fill="white">
                     <use xlink:href="#path-181"></use>
                 </mask>
                 <use id="Mask" fill-opacity="0.430083786" fill="#D8D8D8" xlink:href="#path-181"></use>
                 <g mask="url(#mask-182)">
-                    <g transform="translate(-16.000000, 0.000000)">
+                    <g transform="translate(-16.000000, 10.000000)">
                         <g id="Person-8">
                             <path d="M81.7101,107.5831 L81.7101,93.5831 L91.6091,93.5831 L91.6091,107.5831 C91.6091,110.8971 89.3933738,113.5831 86.6596,113.5831 C83.9258262,113.5831 81.7101,110.8971 81.7101,107.5831 Z" id="Fill-10-Copy" fill="#F8D4AA"></path>
                             <path d="M46.7101,107.5831 L46.7101,93.5831 L56.6091,93.5831 L56.6091,107.5831 C56.6091,110.8971 54.3933738,113.5831 51.6596,113.5831 C48.9258262,113.5831 46.7101,110.8971 46.7101,107.5831 Z" id="Fill-10-Copy" fill="#F8D4AA"></path>
