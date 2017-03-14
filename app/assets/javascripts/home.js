@@ -10,9 +10,11 @@ $(window).load( function() {
 
   $('#modalButton').click(function() {
     $('.close').click();
+    $('#offered').html("");
     var input = $('#pac-input').val();
     $('#secondInput').val(input);
-    codeAddress('pac-input')
+    codeAddress('pac-input');
+    getLanguage(input);
   })
 
   $("#secondInput").keyup(function(event){
@@ -22,12 +24,14 @@ $(window).load( function() {
   });
 
   $('#searchButton').click(function() {
+    $('#offered').html("");
+    var input = $('#secondInput').val();
     codeAddress('secondInput');
+    getLanguage(input);
   })
 })
 
 function initMap(lat, lng) {
-
   if(lat == undefined) {
     lat = 0;
   }
@@ -61,4 +65,26 @@ function codeAddress(id) {
       alert('Geocode was not successful for the following reason: ' + status);
     }
   } );
+}
+
+languages = ['English', 'Portuguese', 'Vietnamese', 'French']
+
+function getLanguage(givenLocation) {
+  var formattedLocation = givenLocation.split(" ");
+
+  var country = formattedLocation[formattedLocation.length - 1];
+
+  $.ajax({
+    type: "GET",
+    url: "https://restcountries.eu/rest/v2/name/" + country,
+    success: function (d) {
+     $('#lang').val(d[0].languages[0].name);
+     if ($.inArray(d[0].languages[0].name, languages) != -1) {
+       $('#offered').html("We offer this language! Sign up today!");
+       $('.display-none').show();
+     } else {
+       $('#offered').html("We don't currently offer this language, but we're always adding more languages! Check back in a bit!");
+     }
+    }
+  });
 }
