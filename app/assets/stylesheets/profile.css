@@ -4,8 +4,8 @@
 }
 
 body {
-	background-color: #FBEEE6 !important;
-	background-image: url("../assets/images/languages.png");
+	background-color: #F2F4F4 !important;
+	background-image: url("languages.png");
 	background-repeat: no-repeat;
 	background-size: 43%;
 	background-position: 410px -25px;
@@ -46,17 +46,477 @@ li {
 }*/
 
 .resume_game_button {
-/*	background-color: rgb(0,157,203)!important;*/
+	background-color: rgb(0,157,203)!important;
 	text-shadow: 5px 5px 8px black;
 	font-size: 25px!important;
-	font-family: 'Sigmar One', cursive;
+	font-family: 'Hammersmith One', sans-serif;
 	position: relative;	
 	top: 165px;
 	width: 450px!important;
 	height: 100px;
 }
 
+.resume_game_button:hover { 
+    background-color: #2E86C1!important;
+}
 
+
+.game_modal {
+	background-color: black;
+	display: none;
+	position: absolute;
+	width: 800px;
+	height: 650px;
+
+}
+
+.close_modal {
+}
+
+.close_modal:hover {
+	background-color: 
+}
+
+
+
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Squada+One);
+  		@import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great);
+			@import url(http://fonts.googleapis.com/css?family=Simonetta);
+			@import url(http://fonts.googleapis.com/css?family=Holtwood+One+SC);
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html, body {
+				height: 100%;
+			}
+
+			body {
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				color: #444;
+				background-color: #DDD;
+			}
+
+			::selection {
+				background: #ff5555;
+			}
+			::-moz-selection {
+				background: #ff5555;
+			}
+
+			h1, h2, h3, h4, h5 {
+				color: #444;
+				text-shadow: 0 1px 0px #fff;
+			}
+
+			.clearfix:before, .clearfix:after {
+				content: "";
+				display: table;
+			}
+
+			.clearfix:after {
+				clear: both;
+			}
+
+			.clearfix {
+				*zoom: 1;
+			}
+
+			a:link, a:active, a:visited {
+				color: #51749C;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: #ff5555;
+			}
+
+			#header {
+				display: block;
+				width: 1024px;
+				height: 49px;
+				padding: 0;
+				margin: 15px auto;
+				border-top: 1px solid #CCC;
+				background-color: #444;
+				background: -webkit-linear-gradient(#444, #333);
+				background: -moz-linear-gradient(#444, #333);
+				background: -o-linear-gradient(#444, #333);
+				background: -ms-linear-gradient(#444, #333);
+				background: linear-gradient(#444, #333);
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				-webkit-box-shadow: 0 1px 3px #666;
+				-moz-box-shadow: 0 1px 3px #666;
+				box-shadow: 0 1px 3px #666;
+			}
+
+			#header #logo {
+				margin-top: 12px;
+				float: left;
+				width: 150px;
+				height: 75px;
+			}
+
+			#header #menu {
+				float: right;
+				overflow: auto;
+				margin-right: 20px;
+			}
+
+			#header #menu ul {
+				list-style: none;
+				display: block;
+				float: right;
+			}
+
+			#header #menu li {
+				font-family: 'Squada One';
+				letter-spacing: 1px;
+				float: left;
+				line-height: 49px;
+				padding: 0 20px;
+				border-left: 1px solid #333;
+				box-shadow: inset 2px 0 2px -2px #666;
+				-webkit-box-shadow: inset 2px 0 2px -2px #666;
+				-moz-box-shadow: inset 2px 0 2px -2px #666;
+			}
+
+			#header #menu ul li a:link, #header #menu ul li a:visited, #header #menu ul li a:active {
+				font-size: 14px;
+				color: #D0D0D0;
+				text-transform: uppercase;
+				text-align: center;
+				text-shadow: 1px 1px 0px #000;
+			}
+
+			#header #menu ul li a:hover {
+				color: #fff;
+				text-shadow: none;
+			}
+
+			.panel {
+				padding: 0;
+				background-color: #fff;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				-webkit-box-shadow: 0 1px 3px #666;
+				-moz-box-shadow: 0 1px 3px #666;
+				box-shadow: 0 1px 3px #666;
+			}
+
+			.metal {
+				-webkit-border-top-left-radius: 3px;
+				-webkit-border-top-right-radius: 3px;
+				-moz-border-radius-topleft: 3px;
+				-moz-border-radius-topright: 3px;
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+				border-top: 1px solid #fff;
+				background: -webkit-linear-gradient(#fff, #ddd);
+				background: -moz-linear-gradient(#ededed, #ddd);
+				background: -o-linear-gradient(#ededed, #ddd);
+				background: -ms-linear-gradient(#ededed, #ddd);
+				background: linear-gradient(#fff, #000);
+			}
+
+			#banner-wrap {
+				width: 100%;
+				padding: 50px 0 0;
+			}
+
+			#banner {
+				margin: 0 auto;
+				display: block;
+				width: 1024px;
+				height: 380px;
+			}
+
+			#banner-header {
+				padding: 10px;
+				height: 45px;
+			}
+
+			#banner-header .nav {
+				width: 70px;
+				height: 25px;
+				margin: 0 auto;
+				padding: 0 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				background-color: #EEE;
+				-webkit-box-shadow: inset 0 0 5px #888, 0 1px 1px #fff;
+				-moz-box-shadow: inset 0 0 5px #888, 0 1px 1px #fff;
+				-ms-box-shadow: inset 0 0 5px #888, 0 1px 1px #fff;
+				-o-box-shadow: inset 0 0 5px #888, 0 1px 1px #fff;
+				box-shadow: inset 0 0 5px #888, 0 1px 1px #fff;
+			}
+
+			#banner-header .nav .dot {
+				float: left;
+				width: 9px;
+				height: 9px;
+				margin: 8px 5px;
+				background-color: #999;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				-webkit-box-shadow: 0 1px 0 #fff;
+				-moz-box-shadow: 0 1px 0 #fff;
+				-ms-box-shadow: 0 1px 0 #fff;
+				-o-box-shadow: 0 1px 0 #fff;
+				box-shadow: 0 1px 0 #fff;
+			}
+
+			#banner-header .nav .act {
+				background-color: #777;
+			}
+
+			#banner-content {
+				-webkit-box-shadow: inset 0px 4px 9px -5px #444;
+				box-shadow: inset 0px 4px 9px -5px #444;
+				-moz-box-shadow: inset 0px 4px 9px -5px #444;
+				-ms-box-shadow: inset 0px 4px 9px -5px #444;
+				-o-box-shadow: inset 0px 4px 9px -5px #444;
+				padding: 0;
+				height: 100%;
+				color: #4477ff;
+				text-align: center;
+				position: relative;
+				overflow: hidden;
+			}
+
+			#banner-content .text0 {
+				font-family: 'Fredericka the Great';
+				font-size: 60px;
+				color: #445566;
+				-moz-transform: scale(1) rotate(90deg) translateX(110px) translateY(-350px) skewX(0deg) skewY(0deg);
+				-webkit-transform: scale(1) rotate(90deg) translateX(110px) translateY(-350px) skewX(0deg) skewY(0deg);
+				-o-transform: scale(1) rotate(90deg) translateX(110px) translateY(-350px) skewX(0deg) skewY(0deg);
+				-ms-transform: scale(1) rotate(90deg) translateX(110px) translateY(-350px) skewX(0deg) skewY(0deg);
+				transform: scale(1) rotate(90deg) translateX(110px) translateY(-350px) skewX(0deg) skewY(0deg);
+			}
+
+			#banner-content .text1 {
+				font-family: 'Simonetta';
+				font-size: 40px;
+				font-style: italic;
+				color: #6688ff;
+				-moz-transform: scale(1) rotate(0deg) translateX(85px) translateY(180px) skewX(0deg) skewY(0deg);
+				-webkit-transform: scale(1) rotate(0deg) translateX(85px) translateY(180px) skewX(0deg) skewY(0deg);
+				-o-transform: scale(1) rotate(0deg) translateX(85px) translateY(180px) skewX(0deg) skewY(0deg);
+				-ms-transform: scale(1) rotate(0deg) translateX(85px) translateY(180px) skewX(0deg) skewY(0deg);
+				transform: scale(1) rotate(0deg) translateX(85px) translateY(180px) skewX(0deg) skewY(0deg);
+			}
+
+			#banner-content .text2 {
+				font-family: 'Squada One';
+				color: #999;
+				font-size: 22px;
+				-moz-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+				-webkit-transform: scale(1) rotate(-90deg) translateX(-37px) translateY(310px) skewX(0deg) skewY(0deg);
+				-o-transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+				-ms-transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+				transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+			}
+
+			#banner-content .text3 {
+				font-family: 'Holtwood One SC';
+				font-size: 62px;
+				text-align: right;
+				line-height: 62px;
+				color: #444;
+				-moz-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-15px) skewX(0deg) skewY(0deg);
+				-webkit-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-15px) skewX(0deg) skewY(0deg);
+				-o-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-15px) skewX(0deg) skewY(0deg);
+				-ms-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-15px) skewX(0deg) skewY(0deg);
+				transform: scale(1) rotate(0deg) translateX(-230px) translateY(-15px) skewX(0deg) skewY(0deg);
+			}
+
+			#banner-content .text4 {
+				font-family: 'Holtwood One SC';
+				font-size: 110px;
+				text-align: right;
+				color: #777;
+				-moz-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-280px) skewX(0deg) skewY(0deg);
+				-webkit-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-280px) skewX(0deg) skewY(0deg);
+				-o-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-280px) skewX(0deg) skewY(0deg);
+				-ms-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-280px) skewX(0deg) skewY(0deg);
+				transform: scale(1) rotate(0deg) translateX(-230px) translateY(-280px) skewX(0deg) skewY(0deg);
+			}
+
+			#bottom {
+				width: 1024px;
+				margin: 30px auto;
+				padding: 0 0;
+				position: relative;
+			}
+
+			#bottom .column p {
+				margin: 10px 0;
+				text-align: justify;
+				text-indent: 20px;
+			}
+
+			#bottom .column {
+				width: 320px;
+				padding: 20px;
+				float: left;
+				margin: 0 32px 30px 0;
+			}
+
+			#bottom .last {
+				margin: 0 0 30px;
+			}
+
+			#footer {
+				width: 100%;
+				height: 150px;
+				background-color: #444;
+			}
+
+			#footer .content {
+				font-size: 12px;
+				width: 1024px;
+				color: #EEE;
+				margin: 0 auto;
+				padding: 15px 0 0;
+			}
+
+			
+
+			#footer .content a:link, #footer .content a:visited, #footer .content a:active {
+				color: #88AADD;
+				text-shadow: 1px 1px 0px #000;
+			}
+
+			#footer .content a:hover {
+				color: #ff5555;
+				text-shadow: none;
+			}
+
+/**
+ * 	flip card css credit to David walsh
+ * http://davidwalsh.name/css-flip
+ */
+.flip-container {
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-o-perspective: 1000;
+	perspective: 1000;
+}
+/* flip the pane when hovered */
+.flip-container.hover .flipper, .flip-container.hover .flipper {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+	-o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+/**
+ * 	back extra styling
+ */
+.back {
+	background-color: #252326;
+	background: url('http://fc08.deviantart.net/fs42/f/2009/070/1/c/Purple_Blur__a_wallpaper_by_Sostopher.jpg') center center scroll;
+}
+
+/**
+ * 	modal style
+ */
+.flip-modal{
+	width: 500px;
+	margin: 100px auto;
+	padding: 20px;
+	background: #fefefe;
+	border-radius: 3px;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.3);
+}
+
+.flip-modal p{
+	margin: 20px;
+	font: 15px Arial, Helvetica, sans-serif;
+}
+
+.flip-modal button{
+	padding: 7px 30px;
+	background: #888888;
+	color: white;
+	border: 0px none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.flip-modal .right{
+	text-align: right;
+}
+
+/**
+ * 	large buttons style
+ */
+.large-buttons{
+	padding: 10px 30px;
+	font: 15px Arial;
+	display: block;
+	background: #51749C;
+	color: #FFFFFF;
+	border: 0px none;
+	border-radius: 5px;
+	margin: 30px auto;
+	cursor: pointer;
+}
 
 
 

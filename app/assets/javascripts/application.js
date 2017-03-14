@@ -15,3 +15,57 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+
+/**
+ * @author http://blazeboy.me
+ */
+
+function flip_dialog(message, html) {
+
+  // fix backstyle
+	$('.flip-container .back').height($('.flip-container .front').height());
+
+	// scroll to top
+	$(window).scrollTop(0)
+
+	if(html)
+		$('.flip-container .back p').html(message);
+	else
+		$('.flip-container .back p').text(message);
+	
+	
+	// then flip that side
+	$('.flip-container').addClass('hover');
+	$('.flip-container .back button').click(function(){
+		$('.flip-container').removeClass('hover');
+	});
+	
+}
+
+$(function() {
+	$('#menu li').click(function() {
+		flip_dialog("this is Spartaaaaaaaaaaaaaa !!!!! ");
+	});
+	
+	$('.large-buttons').click(function() {
+		flip_dialog("Another Message for the greate spartians !!!!! ");
+	});
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
