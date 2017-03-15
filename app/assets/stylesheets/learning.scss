@@ -1,8 +1,16 @@
 // Place all the styles related to the learning controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+	background-image: url("animation/bg.svg");
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
 .game {
-	background: red; 
+	margin-top: 90px;
+	margin-left: 50px;
+	
 	.Robert {
 		width: 110px;
 		height: 181px;
@@ -14,7 +22,7 @@
 	@for $i from 1 through 4 {
 		.#{$class-slug}#{$i}{
 		position: absolute;
-		left: $i * 165px;
+		left: $i * 175px +50px ;
 		width: 110px;
 		height: 181px;
 		background-image: url("animation/Robert.svg");}
