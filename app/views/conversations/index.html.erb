@@ -3,16 +3,21 @@
 
   <div class='ui list'>
     <div class='item'>
-      <% @conversations.each do |conversation| %>
-        <% if conversation.sender_id == current_user.id ||      conversation.recipient_id == current_user.id %>
-          <% if conversation.sender_id == current_user.id %>
-            <% recipient = User.find(conversation.recipient_id) %>
-          <% else %>
-            <% recipient = User.find(conversation.sender_id) %>
-          <% end %>
-          <%= link_to recipient.first_name,   conversation_messages_path(conversation)%>
-        <% end %>
-      <% end %>
+      <table>
+        <tbody>
+          <% @conversations.each do |conversation| %>
+            <tr>
+              <% if conversation.sender_id == current_user.id || conversation.recipient_id == current_user.id %>
+                <td class="mailbox-name"><%= conversation.recipient(current_user) %></a></td>
+                <td><%= link_to conversation.recipient(current_user), conversation_messages_path(conversation)%></td>
+              <% end %>
+            </tr>
+            <% end %>
+            <%# <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td> %>
+            <%# <td class="mailbox-attachment"></td> %>
+            <%# <td class="mailbox-date">Sent <%= conversation.messages.last %1></td> %>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
