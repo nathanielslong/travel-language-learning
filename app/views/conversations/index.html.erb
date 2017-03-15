@@ -1,31 +1,68 @@
-<div class='ui segment'>
-  <h3>Mailbox</h3>
+<div class="container">
+  <div class='ui segment'>
+    <h3><%= current_user.full_name %>'s Mailbox</h3>
 
-  <div class='ui list'>
-    <div class='item'>
-      <% @conversations.each do |conversation| %>
-        <% if conversation.sender_id == current_user.id ||      conversation.recipient_id == current_user.id %>
-          <% if conversation.sender_id == current_user.id %>
-            <% recipient = User.find(conversation.recipient_id) %>
-          <% else %>
-            <% recipient = User.find(conversation.sender_id) %>
-          <% end %>
-          <%= link_to recipient.first_name,   conversation_messages_path(conversation)%>
-        <% end %>
-      <% end %>
+    <div class='ui list'>
+      <div class='item'>
+        <table class='table table-hover table-striped'>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Newest message</th>
+              <th>Last message sent at</th>
+              <th>Link to messages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @conversations.each do |conversation| %>
+              <tr>
+                <% if conversation.sender_id == current_user.id || conversation.recipient_id == current_user.id %>
+                  <td class="mailbox-name"><%= conversation.recipient(current_user) %></td>
+                  <% if conversation.messages.last %>
+                    <td class="mailbox-subject"><%= truncate(conversation.messages.last.body, length: 30) %></td>
+                  <% else %>
+                    <td class="mailbox-subject">No messages yet!</td>
+                  <% end %>
+                  <td class="mailbox-date">Last message <%= time_ago_in_words(conversation.updated_at) %> ago</td>
+                  <td><%= link_to "See your conversation", conversation_messages_path(conversation)%></td>
+                <% end %>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-</div>
 
-<div class='ui segment'>
-  <h3>All Users</h3>
-  <div class='ui list'>
-    <% @users.each do |user| %>
-      <% if user.id != current_user.id %>
-        <div class='item'>
-          <%= user.first_name %> <%= link_to 'Message me!', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post'%>
-        </div>
-      <% end %>
-    <% end %>
+  <div class='ui segment'>
+    <h3>Users of Interest</h3>
+    <div class='ui list'>
+      <div class='item'>
+        <table class='table table-hover table-striped'>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Languages Studying</th>
+              <th>Origin</th>
+              <th>Destination</th>
+              <th>Link to message</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @users.each do |user| %>
+              <tr>
+                <% if user.id != current_user.id %>
+                  <td class="mailbox-name"><%= user.full_name %></td>
+                  <td class="mailbox-subject"><%= user.languages_studying.to_sentence %></td>
+                  <td class="mailbox-subject"><%= user.origin%></td>
+                  <td class="mailbox-subject"><%= user.destination %></td>
+                  <td><%= link_to 'Message me!', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post'%></td>
+                <% end %>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>
