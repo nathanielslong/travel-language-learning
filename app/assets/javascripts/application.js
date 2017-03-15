@@ -16,9 +16,3 @@
 //= require turbolinks
 //= require_tree .
 
-var character = new Image();
-character.src = "animation/WD1.svg";
-
-var canvas = document.getElementById("animation");
-canvas.width = 200;
-canvas.height = 500;

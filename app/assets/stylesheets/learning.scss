@@ -1,3 +1,94 @@
 // Place all the styles related to the learning controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.game {
+	background: red; 
+	.Robert {
+		width: 110px;
+		height: 181px;
+		background-image: url("animation/Robert.svg");
+
+
+	}
+	$class-slug: Robert_station;
+	@for $i from 1 through 4 {
+		.#{$class-slug}#{$i}{
+		position: absolute;
+		left: $i * 165px;
+		width: 110px;
+		height: 181px;
+		background-image: url("animation/Robert.svg");}
+	}
+	
+	.Walk_Right {
+		width: 110px;
+		height: 181px;
+		background-image: url("animation/Walk_Right.svg");
+
+		animation: play .8s steps(6) infinite,  
+		Walk_Right 4s linear 1 alternate;
+		animation-fill-mode: forwards; 
+
+	} 
+
+
+	.Walk_Down {
+		width: 110px;
+		height: 181px;
+		background-image: url("animation/Walk_Down.svg");
+
+		animation: play .8s steps(6) infinite,  
+		Walk_Down 3s linear infinite alternate; 
+	} 
+
+	.Walk_Left {
+		width: 110px;
+		height: 181px;
+		background-image: url("animation/Walk_Left.svg");
+
+		animation: play .8s steps(6) infinite,  
+		Walk_Left 4s linear infinite alternate; 
+	} 
+} 
+
+//     -webkit-animation: play 2s steps(5) infinite;
+//        -moz-animation: play 2s steps(5) infinite;
+//         -ms-animation: play 2s steps(5) infinite;
+//          -o-animation: play 2s steps(5) infinite;
+//             animation: play 2s steps(5) infinite;
+// }
+
+
+
+@keyframes play {
+	from { background-position:    0px; }
+	to { background-position: -660px; }
+}
+
+
+@keyframes Walk_Right {
+	0%{
+		transform: translate(0, 0);
+	}
+	100%  {
+		transform: translate(165px, 0);
+	}
+}
+
+@keyframes Walk_Down {
+	0%{
+		transform: translate(0, 0);
+	}
+	100%  {
+		transform: translate(0, 300px);
+	}
+}
+
+@keyframes Walk_Left {
+	0%{
+		transform: translate(165px, 0);
+	}
+	100%  {
+		transform: translate(0, 0);
+	}
+}
