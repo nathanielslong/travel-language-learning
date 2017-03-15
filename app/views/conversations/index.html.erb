@@ -1,21 +1,32 @@
 <div class='ui segment'>
-  <h3>Mailbox</h3>
+  <h3><%= current_user.full_name %>'s Mailbox</h3>
 
   <div class='ui list'>
     <div class='item'>
-      <table>
+      <table class='table table-hover table-striped'>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Newest message</th>
+            <th>Last message sent at</th>
+            <th>Link to messages</th>
+          </tr>
+        </thead>
         <tbody>
           <% @conversations.each do |conversation| %>
             <tr>
               <% if conversation.sender_id == current_user.id || conversation.recipient_id == current_user.id %>
-                <td class="mailbox-name"><%= conversation.recipient(current_user) %></a></td>
-                <td><%= link_to conversation.recipient(current_user), conversation_messages_path(conversation)%></td>
+                <td class="mailbox-name"><%= conversation.recipient(current_user) %></td>
+                <% if conversation.messages.last %>
+                  <td class="mailbox-subject"><%= truncate(conversation.messages.last.body, length: 30) %></td>
+                <% else %>
+                  <td class="mailbox-subject">No messages yet!</td>
+                <% end %>
+                <td class="mailbox-date">Last message <%= time_ago_in_words(conversation.updated_at) %> ago</td>
+                <td><%= link_to "See your conversation", conversation_messages_path(conversation)%></td>
               <% end %>
             </tr>
-            <% end %>
-            <%# <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td> %>
-            <%# <td class="mailbox-attachment"></td> %>
-            <%# <td class="mailbox-date">Sent <%= conversation.messages.last %1></td> %>
+          <% end %>
         </tbody>
       </table>
     </div>
@@ -23,7 +34,7 @@
 </div>
 
 <div class='ui segment'>
-  <h3>All Users</h3>
+  <h3>Users Of Interest (WILL ADD IF TIME)</h3>
   <div class='ui list'>
     <% @users.each do |user| %>
       <% if user.id != current_user.id %>
