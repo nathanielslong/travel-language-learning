@@ -43,6 +43,7 @@
             <tr>
               <th>Name</th>
               <th>Languages Studying</th>
+              <th>Origin</th>
               <th>Destination</th>
               <th>Link to message</th>
             </tr>
@@ -51,9 +52,11 @@
             <% @users.each do |user| %>
               <tr>
                 <% if user.id != current_user.id %>
-                  <td class="mailbox-name"><%= user.full_name %></td> <
-                  <td class="mailbox-subject"><%= user.languages_studying %></td>
-                  <%= link_to 'Message me!', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post'%>
+                  <td class="mailbox-name"><%= user.full_name %></td>
+                  <td class="mailbox-subject"><%= user.languages_studying.to_sentence %></td>
+                  <td class="mailbox-subject"><%= user.origin %></td>
+                  <td class="mailbox-subject"><%= user.destination %></td>
+                  <td><%= link_to 'Message me!', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post'%></td>
                 <% end %>
               </tr>
             <% end %>
