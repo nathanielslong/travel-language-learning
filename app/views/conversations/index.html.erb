@@ -54,7 +54,7 @@
                 <% if user.id != current_user.id %>
                   <td class="mailbox-name"><%= user.full_name %></td>
                   <td class="mailbox-subject"><%= user.languages_studying.to_sentence %></td>
-                  <td class="mailbox-subject"><%= user.origin %></td>
+                  <td class="mailbox-subject"><%= user.origin%></td>
                   <td class="mailbox-subject"><%= user.destination %></td>
                   <td><%= link_to 'Message me!', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post'%></td>
                 <% end %>
