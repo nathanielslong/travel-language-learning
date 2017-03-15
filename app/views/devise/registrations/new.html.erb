@@ -14,8 +14,10 @@
                   <div class="col-md-6">
                     <div class="input-group">
                       <span class="input-group-addon"><%= icon('user') %></span>
-                      <%= f.input :first_name, required: true, autofocus: true, placeholder: "First name", label: false, input_html: {'ng-model' => 'firstName', 'ng-pattern' => 'nameRegex'} %>
-                      <span class="input-group-addon" ng-show="myForm.firstName.$invalid">{{firstName}}</span>
+                      <%= f.input :first_name, required: true, autofocus: true, placeholder: "First name", label: false, input_html: {'ng-model' => 'firstName'} %>
+
+                      <span class="input-group-addon" ng-show="!nameRegex.test(firstName)">Name must be only letters!</span>
+
                     </div>
                   </div>
 
