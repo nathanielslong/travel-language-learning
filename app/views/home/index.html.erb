@@ -1,0 +1,43 @@
+<div class="fullscreen_bg">
+</div>
+<div class="container body-panel">
+  <br>
+  <label for="location">Destination: </label>
+  <input type="text" id="secondInput" />
+  <button type="button" class="btn" id="searchButton">Check the language</button>
+  <br>
+  <br>
+  <label for="lang">Language spoken: </label>
+  <input type="text" id="lang" readonly />
+  <br>
+  <h3 id="offered"></h3>
+  <%= link_to "Sign up", new_user_registration_path, class: 'display-none', method: :get %>
+  <br>
+  <br>
+  <div id="map"></div>
+</div>
+
+<%# Modal %>
+<div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Choose your Destination</h3>
+      </div>
+      <div class="modal-body">
+        <p>Travelingo is a site to help you prepare to travel by giving you a short trip through a language. Enter a location below and we'll let you know if we offer its language for instruction.</p>
+        <p> Be sure to include the country!</p>
+        <input type="text" id="pac-input" />
+        <button type="button" class="btn" id="modalButton">Check the language</button>
+      </div>
+      <div class="modal-footer">
+        <div>
+          <%= link_to "Login", user_session_path, method: :get %>
+          <span>|</span>
+          <%= link_to "Sign up", new_user_registration_path, method: :get %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
