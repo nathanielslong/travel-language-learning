@@ -1,20 +1,13 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
-  resources :users, :only => [:show]
 
-  devise_for :users
-
+  devise_for :users, :controllers => {:registrations => "registrations"}
   get 'learning/index'
 
-=======
-  get "learning/index"
-
-  devise_for :users
-
->>>>>>> master
   resources :conversations do
     resources :messages
   end
+
+  resources :users, only: [:show]
 
   root "home#index"
 end
