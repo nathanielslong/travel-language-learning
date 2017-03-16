@@ -44,13 +44,11 @@ class User < ApplicationRecord
 
     languages = Language.find(user_languages.map(&:language_id))
 
-    studying = []
-
-    languages.each do |language|
-      studying.push(language.name)
+    [].tap do |studying|
+      languages.each do |language|
+        studying.push(language.name)
+      end
     end
-
-    studying
   end
 
   def self.suggested_users(user)
