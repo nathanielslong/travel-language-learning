@@ -20,7 +20,7 @@ class User < ApplicationRecord
     recipient_conversations = Conversation.where(recipient_id: self.id)
     recipient_users = User.find(recipient_conversations.map(&:sender_id))
 
-    users = sender_users + recipient_users
+    sender_users + recipient_users
   end
 
   def languages_studying
