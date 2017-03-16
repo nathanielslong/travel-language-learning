@@ -1,55 +1,90 @@
 // Place all the styles related to the learning controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.game {
-  background: red; 
-  .Robert {
-    width: 110px;
-    height: 181px;
-    background-image: url("animation/Robert.svg");
+
+$offset: 60px;
+$shifting: 167px;
+
+.body_Bg{
+	background-image: url("animation/bg.svg");
+	z-index: -9999;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat:repeat;
+
+	.game {
+		margin-top: 160px;
+		margin-left: $offset ;
+
+		.Robert {
+			width: 110px;
+			height: 181px;
+			background-image: url("animation/Robert.svg");
 
 
-  }
-  $class-slug: Robert_station;
-  @for $i from 1 through 4 {
-    .#{$class-slug}#{$i}{
-      position: absolute;
-      left: $i * 165px;
-      width: 110px;
-      height: 181px;
-    background-image: url("animation/Robert.svg");}
-  }
+		}
+		$class-slug: Robert_station;
+		@for $i from 1 through 4 {
+			.#{$class-slug}#{$i}{
+				position: absolute;
+				left: $i * $shifting + $offset ;
+				width: 110px;
+				height: 181px;
+				background-image: url("animation/Robert.svg");}
+			}
 
-  .Walk_Right {
-    width: 110px;
-    height: 181px;
-    background-image: url("animation/Walk_Right.svg");
+			@for $id from 5 through 8 {
+				.#{$class-slug}#{$id}{
+					position: absolute;
+					top: 420px ;
+					left: (4 * $shifting + $offset) - (($id - 5) * $shifting) ;
+					width: 110px;
+					height: 181px;
+					background-image: url("animation/Robert.svg");}
+				}
 
-    animation: play .8s steps(6) infinite,  
-    Walk_Right 4s linear 1 alternate;
-    animation-fill-mode: forwards; 
+				.Robert_station1{
 
-  } 
+				}
+				
+				.Walk_Right {
+					width: 110px;
+					height: 181px;
+					background-image: url("animation/Walk_Right.svg");
+
+					animation: play .8s steps(6) infinite,  
+					Walk_Right 2.5s linear 1 alternate;
+					animation-fill-mode: forwards; 
+
+				} 
 
 
-  .Walk_Down {
-    width: 110px;
-    height: 181px;
-    background-image: url("animation/Walk_Down.svg");
+				.Walk_Down {
+					width: 110px;
+					height: 181px;
+					background-image: url("animation/Walk_Down.svg");
 
-    animation: play .8s steps(6) infinite,  
-    Walk_Down 3s linear infinite alternate; 
-  } 
+					animation: play .8s steps(6) infinite,  
+					Walk_Down 2.5s linear 1 alternate; 
+					animation-fill-mode: forwards; 
+				} 
 
-  .Walk_Left {
-    width: 110px;
-    height: 181px;
-    background-image: url("animation/Walk_Left.svg");
+				.Walk_Left {
+					width: 110px;
+					height: 181px;
+					background-image: url("animation/Walk_Left.svg");
 
-    animation: play .8s steps(6) infinite,  
-    Walk_Left 4s linear infinite alternate; 
-  } 
-} 
+					animation: play .8s steps(6) infinite,  
+					Walk_Left 2.5s linear 1 alternate; 
+					animation-fill-mode: forwards; 
+				} 
+			}
+		} 
 
 //     -webkit-animation: play 2s steps(5) infinite;
 //        -moz-animation: play 2s steps(5) infinite;
@@ -61,34 +96,35 @@
 
 
 @keyframes play {
-  from { background-position:    0px; }
-  to { background-position: -660px; }
+	from { background-position:    0px; }
+	to { background-position: -660px; }
 }
 
 
 @keyframes Walk_Right {
-  0%{
-    transform: translate(0, 0);
-  }
-  100%  {
-    transform: translate(165px, 0);
-  }
+	0%{
+		transform: translate(0, 0);
+	}
+	100%  {
+		transform: translate(#{$shifting}, 0);
+	}
 }
 
 @keyframes Walk_Down {
-  0%{
-    transform: translate(0, 0);
-  }
-  100%  {
-    transform: translate(0, 300px);
-  }
+	0%{
+		transform: translate(0, 0);
+	}
+	100%  {
+		transform: translate(0, 250px);
+	}
 }
 
 @keyframes Walk_Left {
-  0%{
-    transform: translate(165px, 0);
-  }
-  100%  {
-    transform: translate(0, 0);
-  }
+	0%{
+		transform: translate(0, 0);
+	}
+	100%  {
+		transform: translate(-#{$shifting}, 0);
+	}
+
 }
