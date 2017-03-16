@@ -3,7 +3,11 @@
   <head>
     <title>TravelLanguageSite</title>
     <%= csrf_meta_tags %>
-
+    <link href="custombox.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/hover.css">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <script src=<%= "https://maps.googleapis.com/maps/api/js?v=3.exp&key=#{ENV['GOOGLE_MAPS_KEY']}&libraries=places" %> ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
@@ -11,6 +15,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
+      <script src="custombox.min.js"></script>
+      <script src="custombox.legacy.min.js"></script>
   <body>
     <%= yield %>
   </body>
