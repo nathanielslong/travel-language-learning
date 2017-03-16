@@ -13,27 +13,27 @@
 
               <div class="form-inputs">
                 <div class="col-md-6">
-                  <div class="input-group">
+                  <div class="input-group validator">
                     <span class="input-group-addon"><%= icon('user') %></span>
                     <%= f.input :first_name, required: true, autofocus: true, placeholder: "First name", label: false, input_html: {'ng-model' => 'firstName'} %>
-                    <span class="input-group-addon" ng-show="!nameRegex.test(firstName)">Name must be only letters!</span>
+                    <span class="input-group-addon test" ng-show="!nameRegex.test(firstName)">Name must be only letters!</span>
                   </div>
                 </div>
 
 
                 <div class="col-md-6">
-                  <div class="input-group">
+                  <div class="input-group validator">
                     <span class="input-group-addon"><%= icon('user') %></span>
                     <%= f.input :last_name, placeholder: "Last name", required: true, label: false, input_html: {'ng-model' => 'lastName'} %>
-                    <span class="input-group-addon" ng-show="!nameRegex.test(lastName)">Name must be only letters!</span>
+                    <span class="input-group-addon test" ng-show="!nameRegex.test(lastName)">Name must be only letters!</span>
                   </div>
                 </div>
 
                 <div class="col-md-6">
-                  <div class="input-group">
+                  <div class="input-group validator">
                     <span class="input-group-addon"><%= icon('envelope') %></span>
                     <%= f.input :email, placeholder: "E-mail", required: true, label: false, input_html: {'ng-model' => 'email'}  %>
-                    <span class="input-group-addon" ng-show="!emailRegex.test(email)">Email must be valid!</span>
+                    <span class="input-group-addon test" ng-show="!emailRegex.test(email)">Email must be valid!</span>
                   </div>
                 </div>
 

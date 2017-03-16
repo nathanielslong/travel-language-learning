@@ -4,13 +4,20 @@ $(document).ready( function() {
   $('form input').keyup(function() {
 
     var empty = false;
+    var invalid = false;
     $('form input').each(function() {
       if ($(this).val().length == 0) {
         empty = true;
       }
     });
 
-    if (empty) {
+    $('.validator .test').each(function() {
+      if (!$(this).hasClass('ng-hide')) {
+        invalid = true;
+      }
+    })
+
+    if (empty || invalid) {
       $('.form-actions input').attr('disabled', 'disabled');
         console.log(empty)
     } else {
