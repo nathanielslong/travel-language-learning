@@ -43,9 +43,6 @@ google.maps.event.addDomListener(window, 'load', destinationAutoComplete);
 var myFormApp = angular.module('myFormApp', []);
 
 myFormApp.controller('mainController', function($scope) {
-  $scope.firstName = '';
-  $scope.lastName = '';
-  $scope.email = '';
   $scope.nameRegex = new RegExp(/^[a-zA-Z]+$/i);
   $scope.emailRegex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 });
