@@ -690,8 +690,8 @@
             </mask>
             <use id="Mask" fill-opacity="0.465155118" fill="#EDE8E8" xlink:href="#path-1"></use>
             <g mask="url(#mask-2)">
-                <g transform="translate(152.881395, 227.923557)">
-                    <g id="Group-3-Copy-3" transform="translate(266.717726, 420.194607)">
+                <g transform="translate(117.881395, 227.923557)">
+                    <g id="Group-3-Copy-9" opacity="0.143682065" transform="translate(0.000000, 0.000000)">
                         <g id="Rectangle">
                             <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
                             <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
@@ -756,7 +756,7 @@
                         </g>
                         <path d="M-11.3297992,160.399169 C-11.3297992,160.399169 2.88287902,144.062674 30.4270696,143.368456" id="Path-5" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4" mask="url(#mask-12)" transform="translate(9.548635, 151.883812) rotate(-4.000000) translate(-9.548635, -151.883812) "></path>
                     </g>
-                    <g id="Group-3-Copy-5" transform="translate(540.480825, 420.194607)">
+                    <g id="Group-3-Copy-3" opacity="0.783004982" transform="translate(265.717726, 420.194607)">
                         <g id="Rectangle">
                             <use fill="black" fill-opacity="1" filter="url(#filter-36)" xlink:href="#path-35"></use>
                             <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-35"></use>
@@ -821,7 +821,7 @@
                         </g>
                         <path d="M-11.3297992,160.399169 C-11.3297992,160.399169 2.88287902,144.062674 30.4270696,143.368456" id="Path-5" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4" mask="url(#mask-42)" transform="translate(9.548635, 151.883812) rotate(-4.000000) translate(-9.548635, -151.883812) "></path>
                     </g>
-                    <g id="Group-3-Copy-4" transform="translate(810.217997, 420.194607)">
+                    <g id="Group-3-Copy-5" opacity="0.783004982" transform="translate(540.480825, 420.194607)">
                         <g id="Rectangle">
                             <use fill="black" fill-opacity="1" filter="url(#filter-63)" xlink:href="#path-62"></use>
                             <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-62"></use>
@@ -886,7 +886,7 @@
                         </g>
                         <path d="M-11.3297992,160.399169 C-11.3297992,160.399169 2.88287902,144.062674 30.4270696,143.368456" id="Path-5" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4" mask="url(#mask-69)" transform="translate(9.548635, 151.883812) rotate(-4.000000) translate(-9.548635, -151.883812) "></path>
                     </g>
-                    <g id="Group-3-Copy-9" opacity="0.143682065" transform="translate(0.000000, 0.000000)">
+                    <g id="Group-3-Copy-4" opacity="0.783004982" transform="translate(810.217997, 420.194607)">
                         <g id="Rectangle">
                             <use fill="black" fill-opacity="1" filter="url(#filter-90)" xlink:href="#path-89"></use>
                             <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-89"></use>
@@ -951,7 +951,7 @@
                         </g>
                         <path d="M-11.3297992,160.399169 C-11.3297992,160.399169 2.88287902,144.062674 30.4270696,143.368456" id="Path-5" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4" mask="url(#mask-96)" transform="translate(9.548635, 151.883812) rotate(-4.000000) translate(-9.548635, -151.883812) "></path>
                     </g>
-                    <g id="Group-3-Copy-8" transform="translate(266.717726, 0.000000)">
+                    <g id="Group-3-Copy-8" opacity="0.783004982" transform="translate(265.717726, 0.000000)">
                         <g id="Rectangle">
                             <use fill="black" fill-opacity="1" filter="url(#filter-117)" xlink:href="#path-116"></use>
                             <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-116"></use>
@@ -1015,7 +1015,7 @@
                         </g>
                         <path d="M-11.3297992,160.399169 C-11.3297992,160.399169 2.88287902,144.062674 30.4270696,143.368456" id="Path-5" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4" mask="url(#mask-123)" transform="translate(9.548635, 151.883812) rotate(-4.000000) translate(-9.548635, -151.883812) "></path>
                     </g>
-                    <g id="Group-3-Copy-7" transform="translate(540.480825, 0.000000)">
+                    <g id="Group-3-Copy-7" opacity="0.783004982" transform="translate(540.480825, 0.000000)">
                         <g id="Rectangle">
                             <use fill="black" fill-opacity="1" filter="url(#filter-144)" xlink:href="#path-143"></use>
                             <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-143"></use>
@@ -1080,7 +1080,7 @@
                         </g>
                         <path d="M-11.3297992,160.399169 C-11.3297992,160.399169 2.88287902,144.062674 30.4270696,143.368456" id="Path-5" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4" mask="url(#mask-150)" transform="translate(9.548635, 151.883812) rotate(-4.000000) translate(-9.548635, -151.883812) "></path>
                     </g>
-                    <g id="Group-3-Copy-6" transform="translate(810.217997, 0.000000)">
+                    <g id="Group-3-Copy-6" opacity="0.783004982" transform="translate(810.217997, 0.000000)">
                         <g id="Rectangle">
                             <use fill="black" fill-opacity="1" filter="url(#filter-171)" xlink:href="#path-170"></use>
                             <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-170"></use>
@@ -1145,7 +1145,7 @@
                         </g>
                         <path d="M-11.3297992,160.399169 C-11.3297992,160.399169 2.88287902,144.062674 30.4270696,143.368456" id="Path-5" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4" mask="url(#mask-177)" transform="translate(9.548635, 151.883812) rotate(-4.000000) translate(-9.548635, -151.883812) "></path>
                     </g>
-                    <g id="Group-3-Copy-11" transform="translate(1090.217997, 420.194607)">
+                    <g id="Group-3-Copy-11" opacity="0.783004982" transform="translate(1090.217997, 420.194607)">
                         <g id="Rectangle">
                             <use fill="black" fill-opacity="1" filter="url(#filter-198)" xlink:href="#path-197"></use>
                             <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-197"></use>
@@ -1210,7 +1210,7 @@
                         </g>
                         <path d="M-11.3297992,160.399169 C-11.3297992,160.399169 2.88287902,144.062674 30.4270696,143.368456" id="Path-5" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4" mask="url(#mask-204)" transform="translate(9.548635, 151.883812) rotate(-4.000000) translate(-9.548635, -151.883812) "></path>
                     </g>
-                    <g id="Group-3-Copy-10" transform="translate(1090.217997, 0.000000)">
+                    <g id="Group-3-Copy-10" opacity="0.783004982" transform="translate(1090.217997, 0.000000)">
                         <g id="Rectangle">
                             <use fill="black" fill-opacity="1" filter="url(#filter-225)" xlink:href="#path-224"></use>
                             <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-224"></use>
