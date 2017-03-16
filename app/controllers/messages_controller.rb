@@ -1,4 +1,4 @@
-class MessagesController < ApplicationController
+class MessagesController < ApplicationController
   before_action :authenticate_user!
   before_action do
     @conversation = Conversation.find(params[:conversation_id])
@@ -32,6 +32,7 @@
 
   def create
     @message = @conversation.messages.new(message_params)
+
     if @message.save
       redirect_to conversation_messages_path(@conversation)
     end
