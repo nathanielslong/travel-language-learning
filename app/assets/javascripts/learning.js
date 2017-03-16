@@ -1,14 +1,13 @@
 $(document).ready(function(){
 
-
-     var station = 1; 
-     $( document).keydown(function( event ) {
-		  if ( event.which == 39 ) {
-	        rob = $('.Robert');
-	    	if (station <= 4){
-	        	rob.addClass('Walk_Right').delay(2800).fadeIn(10, function() { rob.removeClass('Walk_Right').addClass('Robert_station' + station); station += 1;});
-	    	}
-	    	if (station == 5){
+	var station = 1; 
+	$( document).keydown(function( event ) {
+		if ( event.which == 39 ) {
+			rob = $('.Robert');
+			if (station <= 4){
+				rob.addClass('Walk_Right').delay(2800).fadeIn(10, function() { rob.removeClass('Walk_Right').addClass('Robert_station' + station); station += 1;});
+			}
+			if (station == 5){
 	    		//rob.addClass('Walk_Right').delay(4300).fadeIn(10, function() { rob.removeClass('Walk_Right').addClass('Robert_station' + station); station += 1;});
 	    		rob.addClass('Walk_Down').delay(2800).fadeIn(10, function() { rob.removeClass('Walk_Down').addClass('Robert_station' + station); station += 1;});
 	    	}
@@ -24,11 +23,11 @@ $(document).ready(function(){
 	    		location.reload();
 	    	}
 	    	console.log(station);	
-		   
-		  }
-    });
-
-
-
-
+	    	
+	    }
+	});
 });
+
+
+
+

@@ -7,5 +7,4 @@ class Message < ApplicationRecord
   def message_time
     created_at.strftime('%y/%m/%d %k%M')
   end
-
 end

@@ -4,12 +4,11 @@ class Conversation < ApplicationRecord
 
   has_many :messages, dependent: :destroy
 
-  def recipient(user)
+  def find_recipient(user)
     if self.sender_id == user.id
       recipient = User.find(self.recipient_id).full_name
     else
       recipient = User.find(self.sender_id).full_name
     end
   end
-
 end

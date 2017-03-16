@@ -12,7 +12,6 @@ body{
     background-position: center center; 
 }
 .game {
-	
 	margin-top: 160px;
 	margin-left: $offset ;
 
@@ -75,6 +74,7 @@ body{
 		Walk_Left 2.5s linear 1 alternate; 
 		animation-fill-mode: forwards; 
 	} 
+
 } 
 
 //     -webkit-animation: play 2s steps(5) infinite;
@@ -87,8 +87,8 @@ body{
 
 
 @keyframes play {
-	from { background-position:    0px; }
-	to { background-position: -660px; }
+  from { background-position:    0px; }
+  to { background-position: -660px; }
 }
 
 
@@ -117,4 +117,5 @@ body{
 	100%  {
 		transform: translate(-#{$shifting}, 0);
 	}
+
 }

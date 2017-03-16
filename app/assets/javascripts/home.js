@@ -29,7 +29,22 @@ $(window).load( function() {
     codeAddress('secondInput');
     getLanguage(input);
   })
+
 })
+
+function locationAutoComplete() {
+  var input = document.getElementById('pac-input');
+  var autocomplete = new google.maps.places.Autocomplete(input);
+}
+
+function secondLocAuto() {
+  var input = document.getElementById('secondInput');
+  var autocomplete = new google.maps.places.Autocomplete(input);
+}
+
+google.maps.event.addDomListener(window, 'load', locationAutoComplete);
+
+google.maps.event.addDomListener(window, 'load', secondLocAuto);
 
 function initMap(lat, lng) {
   if(lat == undefined) {
@@ -78,13 +93,13 @@ function getLanguage(givenLocation) {
     type: "GET",
     url: "https://restcountries.eu/rest/v2/name/" + country,
     success: function (d) {
-     $('#lang').val(d[0].languages[0].name);
-     if ($.inArray(d[0].languages[0].name, languages) != -1) {
-       $('#offered').html("We offer this language! Sign up today!");
-       $('.display-none').show();
-     } else {
-       $('#offered').html("We don't currently offer this language, but we're always adding more languages! Check back in a bit!");
-     }
+      $('#lang').val(d[0].languages[0].name);
+      if ($.inArray(d[0].languages[0].name, languages) != -1) {
+        $('#offered').html("We offer this language! Sign up today!");
+        $('.display-none').show();
+      } else {
+        $('#offered').html("We don't currently offer this language, but we're always adding more languages! Check back in a bit!");
+      }
     }
   });
 }
