@@ -10,11 +10,7 @@ class User < ApplicationRecord
     :recoverable, :rememberable, :trackable, :validatable
 
   def full_name
-    if first_name && last_name
-      first_name + " " + last_name
-    else
-      "Anonymous"
-    end
+    first_name && last_name ? "#{first_name} #{last_name}" : "Anonymous"
   end
 
   def conversing_users
