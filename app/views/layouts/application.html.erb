@@ -3,6 +3,7 @@
   <head>
     <title>TravelLanguageSite</title>
     <%= csrf_meta_tags %>
+    <link href="custombox.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/hover.css">
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
@@ -12,6 +13,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
+      <script src="custombox.min.js"></script>
+      <script src="custombox.legacy.min.js"></script>
   <body>
     <%= yield %>
   </body>
