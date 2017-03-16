@@ -11,13 +11,16 @@
 }
 
 .my_body {
-	background-image: url("https://images.designtrends.com/wp-content/uploads/2016/04/04070921/Travel-Wallpaper-Background.png");
-	background-size: cover;
-/*	background-color: #F2F4F4 !important;
-	background-image: url("languages.png");
-	background-repeat: no-repeat;
-	background-size: 43%;
-	background-position: 410px -25px;*/
+	  z-index: -9999;
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  background-size: cover;
+	  background-position: 50% 50%;
+	  background-image: url('https://images.designtrends.com/wp-content/uploads/2016/04/04070921/Travel-Wallpaper-Background.png');
+	  background-repeat:repeat;
 }
 
 .user_image {
@@ -74,7 +77,10 @@ li {
 
 .game_modal {
 	display: none;
-	background-image: url("https://images.designtrends.com/wp-content/uploads/2016/04/04070921/Travel-Wallpaper-Background.png");
+	height: 100%;
+	width: 100%;
+	background-image: url("https://asterweb.jpl.nasa.gov/images/GDEM-10km-colorized.png")
+	background-size: cover;
 }
 
 .close_modal {
@@ -86,10 +92,8 @@ li {
 
 iframe {
 	display: none;
+
 }
-
-
-
 
 
 
