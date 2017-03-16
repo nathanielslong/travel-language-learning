@@ -7,10 +7,16 @@ $shifting: 167px;
 
 .body_Bg{
 	background-image: url("animation/bg.svg");
-	background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center; 
-    z-index: 1;
+	z-index: -9999;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat:repeat;
+
 	.game {
 		margin-top: 160px;
 		margin-left: $offset ;
@@ -25,57 +31,60 @@ $shifting: 167px;
 		$class-slug: Robert_station;
 		@for $i from 1 through 4 {
 			.#{$class-slug}#{$i}{
-			position: absolute;
-			left: $i * $shifting + $offset ;
-			width: 110px;
-			height: 181px;
-			background-image: url("animation/Robert.svg");}
-		}
+				position: absolute;
+				left: $i * $shifting + $offset ;
+				width: 110px;
+				height: 181px;
+				background-image: url("animation/Robert.svg");}
+			}
 
-		@for $id from 5 through 8 {
-			.#{$class-slug}#{$id}{
-			position: absolute;
-			top: 420px ;
-			left: (4 * $shifting + $offset) - (($id - 5) * $shifting) ;
-			width: 110px;
-			height: 181px;
-			background-image: url("animation/Robert.svg");}
-		}
+			@for $id from 5 through 8 {
+				.#{$class-slug}#{$id}{
+					position: absolute;
+					top: 420px ;
+					left: (4 * $shifting + $offset) - (($id - 5) * $shifting) ;
+					width: 110px;
+					height: 181px;
+					background-image: url("animation/Robert.svg");}
+				}
 
-		
-		.Walk_Right {
-			width: 110px;
-			height: 181px;
-			background-image: url("animation/Walk_Right.svg");
+				.Robert_station1{
 
-			animation: play .8s steps(6) infinite,  
-			Walk_Right 2.5s linear 1 alternate;
-			animation-fill-mode: forwards; 
+				}
+				
+				.Walk_Right {
+					width: 110px;
+					height: 181px;
+					background-image: url("animation/Walk_Right.svg");
 
+					animation: play .8s steps(6) infinite,  
+					Walk_Right 2.5s linear 1 alternate;
+					animation-fill-mode: forwards; 
+
+				} 
+
+
+				.Walk_Down {
+					width: 110px;
+					height: 181px;
+					background-image: url("animation/Walk_Down.svg");
+
+					animation: play .8s steps(6) infinite,  
+					Walk_Down 2.5s linear 1 alternate; 
+					animation-fill-mode: forwards; 
+				} 
+
+				.Walk_Left {
+					width: 110px;
+					height: 181px;
+					background-image: url("animation/Walk_Left.svg");
+
+					animation: play .8s steps(6) infinite,  
+					Walk_Left 2.5s linear 1 alternate; 
+					animation-fill-mode: forwards; 
+				} 
+			}
 		} 
-
-
-		.Walk_Down {
-			width: 110px;
-			height: 181px;
-			background-image: url("animation/Walk_Down.svg");
-
-			animation: play .8s steps(6) infinite,  
-			Walk_Down 2.5s linear 1 alternate; 
-			animation-fill-mode: forwards; 
-		} 
-
-		.Walk_Left {
-			width: 110px;
-			height: 181px;
-			background-image: url("animation/Walk_Left.svg");
-
-			animation: play .8s steps(6) infinite,  
-			Walk_Left 2.5s linear 1 alternate; 
-			animation-fill-mode: forwards; 
-		} 
-	}
-} 
 
 //     -webkit-animation: play 2s steps(5) infinite;
 //        -moz-animation: play 2s steps(5) infinite;
@@ -87,8 +96,8 @@ $shifting: 167px;
 
 
 @keyframes play {
-  from { background-position:    0px; }
-  to { background-position: -660px; }
+	from { background-position:    0px; }
+	to { background-position: -660px; }
 }
 
 
