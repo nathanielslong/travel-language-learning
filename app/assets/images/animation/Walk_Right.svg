@@ -407,7 +407,7 @@
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
-                <use id="Mask" fill-opacity="0.350600091" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <use id="Mask" fill-opacity="0.0120867301" fill="#D8D8D8" xlink:href="#path-1"></use>
                 <g mask="url(#mask-2)">
                     <g transform="translate(0.000000, 31.000000)">
                         <g id="Person-8">
@@ -557,7 +557,7 @@
                 <mask id="mask-38" fill="white">
                     <use xlink:href="#path-37"></use>
                 </mask>
-                <use id="Mask" fill-opacity="0.332455842" fill="#D8D8D8" xlink:href="#path-37"></use>
+                <use id="Mask" fill-opacity="0.0120867301" fill="#D8D8D8" xlink:href="#path-37"></use>
                 <g mask="url(#mask-38)">
                     <g transform="translate(0.000000, 30.000000)">
                         <g id="Person-8">
@@ -707,7 +707,7 @@
                 <mask id="mask-74" fill="white">
                     <use xlink:href="#path-73"></use>
                 </mask>
-                <use id="Mask" fill-opacity="0.332455842" fill="#D8D8D8" xlink:href="#path-73"></use>
+                <use id="Mask" fill-opacity="0.0120867301" fill="#D8D8D8" xlink:href="#path-73"></use>
                 <g mask="url(#mask-74)">
                     <g transform="translate(1.000000, 28.000000)">
                         <g id="Person-8">
@@ -857,7 +857,7 @@
                 <mask id="mask-110" fill="white">
                     <use xlink:href="#path-109"></use>
                 </mask>
-                <use id="Mask" fill-opacity="0.385473279" fill="#D8D8D8" xlink:href="#path-109"></use>
+                <use id="Mask" fill-opacity="0.0120867301" fill="#D8D8D8" xlink:href="#path-109"></use>
                 <g mask="url(#mask-110)">
                     <g transform="translate(1.000000, 27.000000)">
                         <g id="Person-8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -1006,7 +1006,7 @@
                 <mask id="mask-146" fill="white">
                     <use xlink:href="#path-145"></use>
                 </mask>
-                <use id="Mask" fill-opacity="0.43138587" fill="#D8D8D8" xlink:href="#path-145"></use>
+                <use id="Mask" fill-opacity="0.0120867301" fill="#D8D8D8" xlink:href="#path-145"></use>
                 <g mask="url(#mask-146)">
                     <g transform="translate(1.000000, 29.000000)">
                         <g id="Person-8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -1155,7 +1155,7 @@
                 <mask id="mask-182" fill="white">
                     <use xlink:href="#path-181"></use>
                 </mask>
-                <use id="Mask" fill-opacity="0.430083786" fill="#D8D8D8" xlink:href="#path-181"></use>
+                <use id="Mask" fill-opacity="0.0120867301" fill="#D8D8D8" xlink:href="#path-181"></use>
                 <g mask="url(#mask-182)">
                     <g transform="translate(2.000000, 31.000000)">
                         <g id="Person-8">
