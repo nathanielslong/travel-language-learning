@@ -11,5 +11,4 @@ class Conversation < ApplicationRecord
       recipient = User.find(self.sender_id).full_name
     end
   end
-
 end

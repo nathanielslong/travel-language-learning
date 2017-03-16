@@ -6,5 +6,5 @@ Rails.application.routes.draw do
     resources :messages
   end
 
-  root to: 'home#index'
+  root "home#index"
 end
