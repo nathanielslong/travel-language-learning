@@ -1,0 +1,178 @@
+.fullscreen_bg {
+  z-index: -9999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('https://images.designtrends.com/wp-content/uploads/2016/04/04070921/Travel-Wallpaper-Background.png');
+  background-repeat:repeat;
+}
+
+#pac-input {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-header {
+  font-size: 50px;
+}
+
+.pac-container {
+  z-index: 10000 !important;
+  display: block !important;
+}
+
+.pac-container:empty{
+  display: none !important;
+}
+
+.index{
+  margin-top:40px;
+}
+
+.modal-body p{
+  text-align:center;
+  font-size:20px;
+}
+
+.modal-title p{
+  text-align:center;
+}
+
+.modal-content p{
+  color:#1abc9c;
+}
+
+.modal-content{
+  background-color: #34495E;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open .dropdown-toggle.btn-default{
+  background-color: #34495E;
+  border:0px;
+  color:#1abc9c;
+}
+
+.btn {
+  background-color:#1abc9c;
+  border:0px;
+  color:#34495E;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+.modal-header {
+  border-bottom: 0px solid #1abc9c;
+}
+
+.btn{
+  border-radius:0px;
+}
+
+.panel-body img{
+  width:100%;
+}
+
+.panel-title{
+  font-size: 30px;
+}
+
+.modal-open{
+  overflow:hidden;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: 0.3s all cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+  -moz-transition: 0.3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -ms-transition: 0.3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -o-transition: 0.3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  transition: 0.3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.modal{
+  overflow-y:hidden;
+  -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  -webkit-transition: 0.3s all; 
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.3s all; 
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+code{
+  border-radius:0px;
+}
+
+.close, .close:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.centering {
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.body-panel {
+  background: rgba(256, 256, 256, 0.6);
+  text-align: center;
+  height: 80%;
+  width: 80%;
+  margin-top: 50px;
+}
+
+#map {
+  margin: 0 auto;
+  height: 60%;
+  width: 60%;
+}
+
+.display-none {
+  display: none;
+}
+
+.border {
+  border: 1px solid black;
+  margin: 25px;
+}

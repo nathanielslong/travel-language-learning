@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
-  get 'users/show'
+  resources :users, :only => [:show]
 
   devise_for :users
 
-  get "/users/:id", to: "users#show"
+  get 'learning/index'
+
+  resources :conversations do
+    resources :messages
+  end
+
+  root to: 'home#index'
 end
