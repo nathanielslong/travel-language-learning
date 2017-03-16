@@ -17,17 +17,6 @@ class User < ApplicationRecord
     end
   end
 
-  # validates_format_of :first_name, with: /\A[a-zA-Z]+\z/, message: "Name must consist of only letters."
-  # validates_format_of :last_name, with: /\A[a-zA-Z]+\z/, message: "Name must consist of only letters."
-
-  # validate :origin_and_destination_not_the_same
-
-  # def origin_and_destination_not_the_same
-  #   if origin == destination
-  #     errors.add(:origin, "Can't be the same as the destination.")
-  #   end
-  # end
-  #
   def conversing_users
     sender_conversations = Conversation.where(sender_id: self.id)
     sender_users = User.find(sender_conversations.map(&:recipient_id))
@@ -58,5 +47,4 @@ class User < ApplicationRecord
 
     users = User.find(same_userlangs.map(&:user_id) - user.conversing_users.map(&:id))
   end
-
 end
