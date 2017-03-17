@@ -1,0 +1,44 @@
+/* line 1, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/sign_up.scss */
+html {
+  overflow-y: scroll !important;
+}
+
+/* line 5, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/sign_up.scss */
+.panel {
+  margin-top: 40px;
+}
+
+/* line 9, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/sign_up.scss */
+.fullscreen_bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://images.designtrends.com/wp-content/uploads/2016/04/04070921/Travel-Wallpaper-Background.png");
+  background-repeat: repeat;
+}
+
+/* line 21, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/sign_up.scss */
+.input-group {
+  margin: 10px;
+}
+
+/* line 25, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/sign_up.scss */
+.input-group-addon {
+  background-color: #3276b1;
+  border-color: #285e8e;
+  color: white;
+}
+
+/* line 31, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/sign_up.scss */
+.col-md-offset-right-6 {
+  margin-right: 50%;
+}
+
+/* line 35, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/sign_up.scss */
+.panel-default {
+  opacity: 0.8;
+}

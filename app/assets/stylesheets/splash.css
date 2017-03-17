@@ -1,0 +1,12 @@
+.splash_body {
+	background-color: rgb(247,244,244);
+}
+
+.image_container {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.station {
+	width: 100px!important;
+}
