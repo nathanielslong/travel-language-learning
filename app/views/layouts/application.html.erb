@@ -19,9 +19,10 @@
       <script src="custombox.min.js"></script>
       <script src="custombox.legacy.min.js"></script>
   <body>
-  <%= render 'layouts/html_header' %>
+  <%= render 'layouts/html_header' unless @disable_header%>
     <%= yield %>
-    <%= render 'layouts/html_footer' %>
+    <%= render 'layouts/html_footer' unless @disable_footer %>
+
   </body>
   
 </html>
