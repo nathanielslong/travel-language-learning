@@ -1,0 +1,149 @@
+/* line 8, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg {
+  background-image: url("animation/bg.svg");
+  z-index: -9999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: repeat;
+}
+/* line 20, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game {
+  margin-top: 160px;
+  margin-left: 60px;
+}
+/* line 24, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Robert {
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Robert.svg");
+}
+/* line 33, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Robert_station1 {
+  position: absolute;
+  left: 227px;
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Robert.svg");
+}
+/* line 33, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Robert_station2 {
+  position: absolute;
+  left: 394px;
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Robert.svg");
+}
+/* line 33, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Robert_station3 {
+  position: absolute;
+  left: 561px;
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Robert.svg");
+}
+/* line 33, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Robert_station4 {
+  position: absolute;
+  left: 728px;
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Robert.svg");
+}
+/* line 42, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Robert_station5 {
+  position: absolute;
+  top: 420px;
+  left: 728px;
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Robert.svg");
+}
+/* line 42, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Robert_station6 {
+  position: absolute;
+  top: 420px;
+  left: 561px;
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Robert.svg");
+}
+/* line 42, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Robert_station7 {
+  position: absolute;
+  top: 420px;
+  left: 394px;
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Robert.svg");
+}
+/* line 42, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Robert_station8 {
+  position: absolute;
+  top: 420px;
+  left: 227px;
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Robert.svg");
+}
+/* line 55, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Walk_Right {
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Walk_Right.svg");
+  animation: play 0.8s steps(6) infinite, Walk_Right 2.5s linear 1 alternate;
+  animation-fill-mode: forwards;
+}
+/* line 67, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Walk_Down {
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Walk_Down.svg");
+  animation: play 0.8s steps(6) infinite, Walk_Down 2.5s linear 1 alternate;
+  animation-fill-mode: forwards;
+}
+/* line 77, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/learning.scss */
+.body_Bg .game .Walk_Left {
+  width: 110px;
+  height: 181px;
+  background-image: url("animation/Walk_Left.svg");
+  animation: play 0.8s steps(6) infinite, Walk_Left 2.5s linear 1 alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -660px;
+  }
+}
+@keyframes Walk_Right {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(167px, 0);
+  }
+}
+@keyframes Walk_Down {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 250px);
+  }
+}
+@keyframes Walk_Left {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-167px, 0);
+  }
+}
