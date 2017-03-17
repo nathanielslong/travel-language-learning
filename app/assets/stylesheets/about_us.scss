@@ -1,0 +1,28 @@
+.wel h1 {
+font-weight:700; 
+color:#fff;
+}
+
+.brk {
+height:4px;
+border-radius:4px;
+background:#d9534f;
+margin:25px auto;
+display:block;
+width:60px;
+}
+
+.who-we {
+margin-top:50px;
+margin-bottom:50px;
+}
+
+.who-we h2 {
+color:#d9534f;
+}
+
+/* media */
+@media (min-width:768px) {
+  .wel-info{max-width:850px; margin-left:auto; margin-right:auto}
+  .who-we h2{font-size:42px} .wel h1{font-size:65px} header .wel{font-size:26px}
+}

@@ -1,7 +1,7 @@
 <div class="menu">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a href="#">TraveLingo</a>
+      <%= link_to "TraveLingo", root_path %>
     </div>
     <div>
       <ul class="nav navbar-nav navbar-right">
@@ -10,7 +10,7 @@
             <span class='glyphicon glyphicon-info-sign'></span>
             About Us
           </li><% end %>
-      <li><%= link_to user_path do %>
+      <li><%= link_to current_user do %>
         <span class='glyphicon glyphicon-user'></span>
         User Profile
       </li><% end %>
