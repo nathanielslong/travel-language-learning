@@ -14,6 +14,12 @@
 			      <div class="caption">
 			      </div>
 			    </div>
+
+			    <h3 id="current_progress"><span>Learning Progress</span></h3>
+					<div class="progress">
+					  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%
+			 		 </div>
+					</div>
 			  </div>
 			</div>
 
@@ -22,34 +28,24 @@
 			    <div class="thumbnail">
 			      <div class="caption">
 			        <h3 id="user_name">Sam Almeida</h3>
+			        <span class="badge">42</span>
 			        <ul>
 			        	<li>Location:<span> Philadelphia, PA</span></li>
 			        	<li>Age:<span> 32</span></li>
 			        	<li>Currently Learning: <span> Portuguese</li>
 			        </ul>
-			        <p><a href="#" class="btn btn-primary" role="button">Message Sam</a></p>
+			        <button class="btn btn-primary message" role="button">Message Sam</a></button>
+
+
+
 			      </div>
 			    </div>
 			  </div>
 			</div>
 
 
-				<h3 id="current_progress">Current Progress</h3>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%
-			 		 </div>
-					</div>
+				
 				</div>
-
-
-
-
-
-
-
-
-
-
 
 			<div class="col-md-6 col2">
 
@@ -63,10 +59,20 @@
  --><!-- 						<button type = "button" class = "btn btn-primary close_modal">RETURN TO PROFILE</button>	
  -->		<!-- 			</div> -->
 
-<iframe class="game_modal" src="/learning/index"></iframe>
+		<iframe class="game_modal" src="/learning"></iframe>
+			<div class="msg_container">
+	        	<textarea class="text_area" rows="10" cols="70" name="usrtxt" wrap="hard"></textarea> <br />
+	
+
+	        		<button data-dismiss="modal" class="btn  btn-large send_button"> Close</button>
+   <asp:Button runat="server" ID="btnSaveImage" Text="Save Image" CssClass="Greengradiant btn- large" OnClick="btnSaveImage_Click" UseSubmitBehavior="false" data-dismiss="modal" />
 
 
+				</div>
+				<div class="alert alert-success msg_alert" role="alert">Message Sent!</div>
 
+
+				<div class="well well-lg bio_box">Hi, I am the bio box</div>
 
 				<button type="button" class="btn btn-success resume_game_button hvr-back-pulse" >START NEW GAME OR RESUME <br />EXISTING GAME!</button>
 			</div> 
@@ -84,11 +90,36 @@
 			<div class="col-md-2 col3">
 				<div class="row">
 				  <div class="col-xs-6 col-md-3">
-				    <a href="#" class="thumbnail">
-				      <img src="...">
-				    </a>
+				    <div class="thumbnail right_col">
+				    	<h3>Nearby Users</h3>
+						  <ul>
+						  	<li>test 1</li><br />
+						  	<li>test 2</li><br />
+						  	<li>test 3</li><br />
+						  	<li>test 4</li><br />
+						  	<li>test 5</li><br />
+						  	<li>test 6</li><br />			
+						  </ul>
+				    </div>
 				  </div>
 				</div>
+
+
+				<div class="row">
+				  <div class="col-xs-6 col-md-3">
+				    <div class="thumbnail right_col_bottom">
+				    	<h3>Nearby Users</h3>
+						  <ul>
+						  	<li>test 1</li><br />
+						  	<li>test 2</li><br />
+						  	<li>test 3</li><br />
+						  	<li>test 4</li><br />			
+						  </ul>
+				    </div>
+				  </div>
+				</div>
+
+
 			</div>
 	</div>
 </div>
