@@ -83,11 +83,9 @@ li {
 }
 
 .game_modal {
-	display: none;
-	height: 100%;
-	width: 100%;
-	background-image: url("https://images.designtrends.com/wp-content/uploads/2016/04/04070921/Travel-Wallpaper-Background.png");
-	background-size: cover;
+	height: 700px;
+	width: 1000px;
+
 }
 
 .close_modal {
