@@ -1,23 +1,32 @@
 .container {
-	margin-top: 20px;
+	margin-top: 40px;
 	text-align: center;
+}
+
+body {
+	height: 700px!important;
+
 }
 
 .hanging {
 	position: relative;
-	bottom: 15px;
+	bottom: 20px;
 	margin: 0 auto;
 	width: 450px;
 }
 
 .my_body {
-	background-image: url("https://images.designtrends.com/wp-content/uploads/2016/04/04070921/Travel-Wallpaper-Background.png");
+	height: 900px;
+	z-index: -9999;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	background-size: cover;
-/*	background-color: #F2F4F4 !important;
-	background-image: url("languages.png");
-	background-repeat: no-repeat;
-	background-size: 43%;
-	background-position: 410px -25px;*/
+	background-position: 50% 50%;
+	background-image: url('https://images.designtrends.com/wp-content/uploads/2016/04/04070921/Travel-Wallpaper-Background.png');
+	background-repeat:repeat;
 }
 
 .user_image {
@@ -28,18 +37,18 @@
 }
 
 .thumbnail {
-	background-color: rgba(0,0,0,0)!important;
+	background-color: rgba(213, 219, 219, 0.7)!important;
 	width: 250px;
 }
 
 li {
-	color: rgb(0,157,203);
-	font-family: 'Baloo Bhaina', cursive;
+	color: #000000;
+	font-family: 'Hammersmith One', sans-serif;
 	text-align: left;
 }
 
 #user_name {
-	font-family: 'Baloo Bhaina', cursive;
+	font-family: 'Hammersmith One', sans-serif;
 	margin-left: 20px;
 }
 
@@ -50,34 +59,35 @@ li {
 }
 
 #current_progress {
-	font-family: 'Baloo Bhaina', cursive;
+	width: 250px;
+	font-family: 'Hammersmith One', sans-serif;
 }
-
-/*.col1, .col2, .col3 {
+/*
+.col1, .col2, .col3 {
 	border: 1px solid black;
-}
-*/
+}*/
+
 .resume_game_button {
 	background-color: rgb(0,157,203)!important;
 	text-shadow: 5px 5px 8px black;
 	font-size: 25px!important;
 	font-family: 'Hammersmith One', sans-serif;
 	position: relative;	
-	bottom: 15px;
 	width: 450px!important;
 	height: 100px;
+	z-index: 0
 }
 
 .resume_game_button:hover { 
     background-color: #2E86C1!important;
 }
 
-body {
-	margin: 0;
-}
 .game_modal {
 	display: none;
+	height: 100%;
+	width: 100%;
 	background-image: url("https://images.designtrends.com/wp-content/uploads/2016/04/04070921/Travel-Wallpaper-Background.png");
+	background-size: cover;
 }
 
 .close_modal {
@@ -88,10 +98,64 @@ body {
 }
 
 iframe {
-
-	height: 65vh;
+	border: 0;
 	display: none;
 }
+
+.text_area {
+	
+}
+
+.send_button {
+	position: relative;
+	left: 234px;
+	z-index: 2;
+}
+
+.msg_container {
+	display: none;
+	margin: 0 auto;
+	position: absolute;
+	left: 15.8px;
+	z-index: 10;
+}
+
+.msg_alert {
+	display: none;
+	position: absolute;
+	z-index: 100;
+}
+
+.bio_box {
+	position: relative;
+	bottom: 40px;
+	background-color: rgba(213, 219, 219, 0.7)!important;
+	border-radius: 3px;
+	margin: 0 auto;
+	width: 450px;
+	height: 175px;
+}
+
+.right_col {
+	width: 250px!important;
+	height: 294px!important;
+	position: absolute;
+}
+
+
+.right_col_bottom {
+	margin-top: 375px;
+	width: 250px!important;
+	height: 228px!important;
+}
+
+
+
+
+
+
+
+
 
 
 
