@@ -30,7 +30,7 @@
                 <li>Age: <span><%= @user.age(@user.birthday) %></span></li>
                 <li>Currently Learning: <span><%= @user.languages_studying == "None" ? "None" : @user.languages_studying.to_sentence %></span></li>
               </ul>
-              <button class="btn btn-primary message" role="button">Message Sam</a></button>
+              <button class="btn btn-primary message" role="button">Message <%= @user.full_name %></a></button>
             </div>
           </div>
         </div>
@@ -59,14 +59,16 @@
       <div class="row">
         <div class="col-xs-6 col-md-3">
           <div class="thumbnail right_col">
-            <h3>Nearby Users</h3>
+            <h3>People studying the same language</h3>
             <ul>
-              <li>test 1</li><br />
-              <li>test 2</li><br />
-              <li>test 3</li><br />
-              <li>test 4</li><br />
-              <li>test 5</li><br />
-              <li>test 6</li><br />			
+              <% @same_language.each do |user| %>
+                <% if user.id != current_user.id %>
+                  <li><%= link_to user_path(user) do %>
+                    <%# add messaging direct to the envelope %>
+                    <%= user.full_name %> <span class="glyphicon glyphicon-envelope"></span></li>
+                <% end %>
+              <% end %>
+            <% end %>
             </ul>
           </div>
         </div>
@@ -77,10 +79,14 @@
           <div class="thumbnail right_col_bottom">
             <h3>Nearby Users</h3>
             <ul>
-              <li>test 1</li><br />
-              <li>test 2</li><br />
-              <li>test 3</li><br />
-              <li>test 4</li><br />			
+              <% @nearby.each do |user| %>
+                <% if user.id != current_user.id %>
+                  <li><%= link_to user_path(user) do %>
+                    <%# add messaging direct to the envelope %>
+                    <%= user.full_name %> <span class="glyphicon glyphicon-envelope"></span></li>
+                <% end %>
+              <% end %>
+            <% end %>
             </ul>
           </div>
         </div>

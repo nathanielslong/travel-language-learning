@@ -51,4 +51,11 @@ class User < ApplicationRecord
 
     users = User.find(same_userlangs.map(&:user_id) - user.conversing_users.map(&:id))
   end
+
+  def nearby_users
+    origin = self.origin.split(" ")
+    origin = origin.pop()
+    formatted_origin = '%' + origin + '%'
+    same_location = User.where('origin LIKE ?', formatted_origin ).all
+  end
 end
