@@ -15,8 +15,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-<<<<<<< HEAD
-
 function flip_dialog(message, html) {
 
   // fix backstyle
@@ -49,5 +47,3 @@ $(function() {
   });
 
 });
-=======
->>>>>>> master
