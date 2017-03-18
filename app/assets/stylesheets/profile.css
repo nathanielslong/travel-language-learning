@@ -141,3 +141,7 @@ iframe {
   width: 250px!important;
   height: 228px!important;
 }
+
+.cant-see {
+  visibility: hidden;
+}
