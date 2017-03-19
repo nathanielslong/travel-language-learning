@@ -2,25 +2,25 @@ $(document).ready(function(){
 
 
 
-	var station = 2; 
+	var station = 1; 
 	$( document).keydown(function( event ) {
 		if ( event.which == 39 ) {
 			rob = $('.Robert');
-			stationContainer = $('.station-container')
+			// var stationRemove = station - 1;
+			
+			if (station == 1){
+				rob.addClass('Walk_Right').delay(2800).fadeIn(10, function() { rob.removeClass('Walk_Right').addClass('Robert_station' + station); station += 1;});
+			}
 			if (station <= 4){
-				// ($('station-cell'))[station].addClass('hidden');
-				document.getElementsByClassName("station-cell")[station-2].style.visibility = "hidden"
-
+				$('.station-cell'+(station-1)).remove();
 				rob.addClass('Walk_Right').delay(2800).fadeIn(10, function() { rob.removeClass('Walk_Right').addClass('Robert_station' + station); station += 1;});
 			}
 			if (station == 5){
-	    		//rob.addClass('Walk_Right').delay(4300).fadeIn(10, function() { rob.removeClass('Walk_Right').addClass('Robert_station' + station); station += 1;});
-	    		stationContainer.classList.add('vertical-translate')
+				$('.station-cell'+(station-1)).remove();
 	    		rob.addClass('Walk_Down').delay(2800).fadeIn(10, function() { rob.removeClass('Walk_Down').addClass('Robert_station' + station); station += 1;});
 	    	}
 	    	if (station > 5){
-	    		stationContainer.classList.add('vertical-translate')
-	    		//rob.addClass('Walk_Right').delay(4300).fadeIn(10, function() { rob.removeClass('Walk_Right').addClass('Robert_station' + station); station += 1;});
+	    		$('.station-cell'+(station-1)).remove();
 	    		rob.addClass('Walk_Left').delay(2800).fadeIn(10, function() { rob.removeClass('Walk_Left').addClass('Robert_station' + station); station += 1;});
 
 	    	}
@@ -77,11 +77,11 @@ $(document).ready(function(){
 		for (var i = 0; i < stationsLength; i++) {
 			var stationObject = stations[i];
 			var stationCell = document.createElement("div");
-			stationCell.className = "station-cell";
+			stationCell.className = "station-cell"+stationObject.id;
 			stationCell.style.width = viewportWidth.toString() + "px";
 			// stationCell.
 			storyboardContainer.appendChild(stationCell);
-			var currentStationCell = document.getElementsByClassName("station-cell")[i];
+			var currentStationCell = document.getElementsByClassName("station-cell"+stationObject.id)[0];
 			var currentStation = document.createElement("div");
 			currentStation.className = "station";
 			currentStation.style.width = forthWidth.toString() + "px";
@@ -123,13 +123,13 @@ $(document).ready(function(){
 			console.log(stationDescriptionContentPhrases)
 			currentStationDescriptionContent.appendChild(stationDescriptionContentPhrases);
 		}
-		window.scrollTo = (0, 0);
-		document.getElementsByClassName("learning-container")[0].scrollUp = 0;
-		document.getElementsByClassName("station-container")[0].scrollLeft = 0;
-		document.getElementsByClassName("station")[0].scrollLeft = 0;
-		document.getElementsByClassName("station-cell")[0].scrollLeft = 0;
-		document.getElementsByClassName("station-content")[0].scrollLeft = 0;
-		document.getElementsByClassName("station-description-content")[0].scrollLeft = 0;
+		// window.scrollTo = (0, 0);
+		// document.getElementsByClassName("learning-container")[0].scrollUp = 0;
+		// document.getElementsByClassName("station-container")[0].scrollLeft = 0;
+		// document.getElementsByClassName("station")[0].scrollLeft = 0;
+		// document.getElementsByClassName("station-cell1")[0].scrollLeft = 0;
+		// document.getElementsByClassName("station-content")[0].scrollLeft = 0;
+		// document.getElementsByClassName("station-description-content")[0].scrollLeft = 0;
 	}
 	function stationAnimation(station){
 

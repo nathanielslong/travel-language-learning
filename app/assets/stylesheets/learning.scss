@@ -61,7 +61,7 @@ $offset_top: 160px;
 			background-image: url("animation/Walk_Right.svg");
 
 			animation: play .8s steps(6) infinite,  
-			Walk_Right 2.5s linear 1 alternate;
+			Walk_Right 2.8s linear 1 alternate;
 			animation-fill-mode: forwards; 
 
 		} 
@@ -73,7 +73,7 @@ $offset_top: 160px;
 			background-image: url("animation/Walk_Down.svg");
 
 			animation: play .8s steps(6) infinite,  
-			Walk_Down 2.5s linear 1 alternate; 
+			Walk_Down 2.8s linear 1 alternate; 
 			animation-fill-mode: forwards; 
 		} 
 
@@ -83,7 +83,7 @@ $offset_top: 160px;
 			background-image: url("animation/Walk_Left.svg");
 
 			animation: play .8s steps(6) infinite,  
-			Walk_Left 2.5s linear 1 alternate; 
+			Walk_Left 2.8s linear 1 alternate; 
 			animation-fill-mode: forwards; 
 		} 
 	}
@@ -95,10 +95,7 @@ $offset_top: 160px;
 			// position: fixed;
 			.station-cell{
 				// height: 100vH;
-				.visible{
-					visibility: visible;
-					// display: flex;
-				}
+
 				.station{
 					// height: 100vH;
 					.station-content{						
@@ -131,8 +128,16 @@ $offset_top: 160px;
 	}
 }
 	
+$class-slug1: station-cell;
+@for $x from 1 through 8 {
+	.#{$class-slug1}#{$x}{
 
-	
+	}
+}
+	.visible{
+		visibility: visible;
+		// display: flex;
+	}	
 
 	
 
