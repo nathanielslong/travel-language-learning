@@ -7,8 +7,7 @@ class UsersController < ApplicationController
   end
 
   def splash
-	  @disable_footer = true
-
+	layout nil, :only => [:action]
   end
 
 end
