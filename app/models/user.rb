@@ -27,6 +27,18 @@ class User < ApplicationRecord
     sender_users + recipient_users
   end
 
+  def arent_conversing(user)
+    sender_conversation = Conversation.where(sender_id: self.id, recipient_id: user.id)
+
+    recipient_conversation = Conversation.where(sender_id: user.id, recipient_id: self.id)
+
+    if sender_conversation.length > 0 || recipient_conversation.length > 0
+      false
+    else
+      true
+    end
+  end
+
   def languages_studying
     user_languages = Userlang.where(user_id: self.id)
 

@@ -29,7 +29,7 @@
                 <li>Age: <span><%= @user.age(@user.birthday) %></span></li>
                 <li>Currently Learning: <span><%= @user.languages_studying == "None" ? "None" : @user.languages_studying.to_sentence %></span></li>
               </ul>
-              <% if current_user != @user %>
+              <% if current_user != @user && current_user.arent_conversing(@user)  %>
                 <button class="btn btn-primary message" role="button">Message <%= @user.full_name %></a></button>
               <% end %>
             </div>
@@ -52,7 +52,6 @@
         <asp:Button runat="server" ID="btnSaveImage" Text="Save Image" CssClass="Greengradiant btn- large" OnClick="btnSaveImage_Click" UseSubmitBehavior="false" data-dismiss="modal" />
       </div>
 
-      <div class="alert alert-success msg_alert" role="alert">Message Sent!</div>
       <div class="display-none formbio well well-lg bio_box2">
         <%= simple_form_for @profile, remote: true, method: :post, url: user_bio_path do |f| %>
           <%= f.input :bio, label: false, autofocus: true, input_html: { 'class': 'bioinput'} %>
