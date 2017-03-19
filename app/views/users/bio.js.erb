@@ -2,7 +2,7 @@ var editableText = $("<textarea class='well well-lg bio_box' />");
 var existingBio = $('.bio_box').html();
 editableText.val(existingBio);
 
-$(".button_to input").val("Submit Edit");
-$(".button_to input[input='hidden'][value='put']").remove();
+$(".button_to input[type='submit']").val("Submit Edit");
+$(".button_to input[name='_method']").val("post");
 $('.bio_box').replaceWith(editableText);
 editableText.focus();
