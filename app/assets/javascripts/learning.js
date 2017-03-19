@@ -2,18 +2,24 @@ $(document).ready(function(){
 
 
 
-	var station = 1; 
+	var station = 2; 
 	$( document).keydown(function( event ) {
 		if ( event.which == 39 ) {
 			rob = $('.Robert');
+			stationContainer = $('.station-container')
 			if (station <= 4){
+				// ($('station-cell'))[station].addClass('hidden');
+				document.getElementsByClassName("station-cell")[station-2].style.visibility = "hidden"
+
 				rob.addClass('Walk_Right').delay(2800).fadeIn(10, function() { rob.removeClass('Walk_Right').addClass('Robert_station' + station); station += 1;});
 			}
 			if (station == 5){
 	    		//rob.addClass('Walk_Right').delay(4300).fadeIn(10, function() { rob.removeClass('Walk_Right').addClass('Robert_station' + station); station += 1;});
+	    		stationContainer.classList.add('vertical-translate')
 	    		rob.addClass('Walk_Down').delay(2800).fadeIn(10, function() { rob.removeClass('Walk_Down').addClass('Robert_station' + station); station += 1;});
 	    	}
 	    	if (station > 5){
+	    		stationContainer.classList.add('vertical-translate')
 	    		//rob.addClass('Walk_Right').delay(4300).fadeIn(10, function() { rob.removeClass('Walk_Right').addClass('Robert_station' + station); station += 1;});
 	    		rob.addClass('Walk_Left').delay(2800).fadeIn(10, function() { rob.removeClass('Walk_Left').addClass('Robert_station' + station); station += 1;});
 
@@ -35,8 +41,8 @@ $(document).ready(function(){
 		this.description = [];
 	};
 
-	var bodyContainer = document.getElementsByClassName("learning_container")[0];
-	var storyboardContainer = document.getElementsByClassName("station_container")[0];
+	var bodyContainer = document.getElementsByClassName("learning-container")[0];
+	var storyboardContainer = document.getElementsByClassName("station-container")[0];
 	var viewportWidth = document.documentElement.clientWidth;
 	var viewportHeight = document.documentElement.clientHeight;
 
@@ -63,8 +69,8 @@ $(document).ready(function(){
 	var storyboardWidth = viewportWidth*stationsLength;
 	var width = storyboardWidth;
 
-	forthWidth = viewportWidth * (1/4);
-	threeForthWidth = viewportWidth * (3/4);
+	forthWidth = viewportWidth * (0.25);
+	threeForthWidth = viewportWidth * (0.75);
 	learningStation();
 
 	function learningStation(){
@@ -73,12 +79,14 @@ $(document).ready(function(){
 			var stationCell = document.createElement("div");
 			stationCell.className = "station-cell";
 			stationCell.style.width = viewportWidth.toString() + "px";
+			// stationCell.
 			storyboardContainer.appendChild(stationCell);
 			var currentStationCell = document.getElementsByClassName("station-cell")[i];
 			var currentStation = document.createElement("div");
 			currentStation.className = "station";
 			currentStation.style.width = forthWidth.toString() + "px";
 			currentStation.style.marginLeft = threeForthWidth.toString() + "px";
+			currentStation.marginTop = forthWidth.toString() + "px";
 			// currentJob.style.marginRight = fourColumns.toString() + "px";
 			// currentJob.style.background = jobObject.name;
 			currentStationCell.appendChild(currentStation);
@@ -116,14 +124,15 @@ $(document).ready(function(){
 			currentStationDescriptionContent.appendChild(stationDescriptionContentPhrases);
 		}
 		window.scrollTo = (0, 0);
-		document.body.scrollLeft = 0;
-		document.getElementsByClassName("fixed")[0].scrollLeft = 0;
+		document.getElementsByClassName("learning-container")[0].scrollUp = 0;
 		document.getElementsByClassName("station-container")[0].scrollLeft = 0;
-		document.getElementsByClassName("storyboard-container")[0].scrollLeft = 0;
 		document.getElementsByClassName("station")[0].scrollLeft = 0;
 		document.getElementsByClassName("station-cell")[0].scrollLeft = 0;
 		document.getElementsByClassName("station-content")[0].scrollLeft = 0;
 		document.getElementsByClassName("station-description-content")[0].scrollLeft = 0;
+	}
+	function stationAnimation(station){
+
 	}
 
 });

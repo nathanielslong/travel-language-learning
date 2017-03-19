@@ -2,10 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$offset: 60px;
+$offset: 60px; // offset left
 $shifting: 167px;
-
-.body_Bg{
+$offset_top: 160px;
+.body-Bg{
 	background-image: url("animation/bg.svg");
 	z-index: -9999;
 	position: fixed;
@@ -28,7 +28,7 @@ $shifting: 167px;
 		}
 
 		.Robert {
-			margin-top: 160px;
+			margin-top: $offset_top;
 			margin-left: 0 ;
 			z-index: -99;
 			position: absolute;
@@ -90,25 +90,22 @@ $shifting: 167px;
 
 
 	.learning-container{
-		position: fixed;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		display: inline;
-		height: 100vH;
 		.station-container{ 
 			height: 100vH;
 			// position: fixed;
 			.station-cell{
-				height: 100vH;
+				// height: 100vH;
+				.visible{
+					visibility: visible;
+					// display: flex;
+				}
 				.station{
-					height: 100vH;
+					// height: 100vH;
 					.station-content{						
 					   	.station-content-title{
 							// height: 20vH;
-							font-size: 40px;
-							text-align: center;
+							font-size: 20px;
+							// text-align: left;
 							color: #8492FB;
 						}
 					}
