@@ -14,10 +14,14 @@ class UsersController < ApplicationController
   end
 
   def bio
+    @user = User.find(params[:id])
     render 'users/bio.js.erb'
   end
 
   def newbio
+    @user = User.find(params[:id])
+    @user.profile.bio = params[:profile][:bio]
+    @user.profile.save
     render 'users/newbio.js.erb'
   end
 

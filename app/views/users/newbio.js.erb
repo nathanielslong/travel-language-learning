@@ -1,7 +1,6 @@
-var newDiv = $("<div class='well well-lg bio_box'></div>");
-var remadeBio = $('.bio_box').val();
-newDiv.html(remadeBio);
+var remadeBio = $('.bioinput').html();
 
-$('.bio_box').replaceWith(newDiv);
-$(".button_to input[name='_method']").val("put");
-$(".button_to input[type='submit']").val("Edit Bio");
+$(".formbio").addClass('display-none');
+
+$('.bio_box').val(remadeBio).show();
+$(".button_to").show();
