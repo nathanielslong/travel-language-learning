@@ -51,6 +51,7 @@
       <div class="alert alert-success msg_alert" role="alert">Message Sent!</div>
       <div class="well well-lg bio_box"><%= @profile.bio %></div>
       <% if @user == current_user %>
+        <%= button_to "Edit Bio",  %>
         <button type="button" class="btn btn-success resume_game_button hvr-back-pulse" >START NEW GAME OR RESUME <br />EXISTING GAME!</button>
     </div>
   <% else %>
