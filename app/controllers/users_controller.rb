@@ -13,4 +13,11 @@ class UsersController < ApplicationController
     @disable_footer = true
   end
 
+  def bio
+    render 'users/bio.js.erb'
+  end
+
+  def picture
+  end
+
 end

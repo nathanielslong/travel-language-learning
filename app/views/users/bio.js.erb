@@ -1,0 +1,7 @@
+var editableText = $("<textarea class='well well-lg bio_box' />");
+var existingBio = $('.bio_box').html();
+editableText.val(existingBio);
+
+$(".button_to input").val("Submit Edit");
+$('.bio_box').replaceWith(editableText);
+editableText.focus();
