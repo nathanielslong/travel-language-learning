@@ -121,7 +121,6 @@ iframe {
 
 .bio_box {
   position: relative;
-  bottom: 40px;
   background-color: rgba(213, 219, 219, 0.7)!important;
   border-radius: 3px;
   margin: 0 auto;

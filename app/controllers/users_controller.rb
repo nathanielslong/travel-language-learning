@@ -17,6 +17,10 @@ class UsersController < ApplicationController
     render 'users/bio.js.erb'
   end
 
+  def newbio
+    render 'users/newbio.js.erb'
+  end
+
   def picture
   end
 

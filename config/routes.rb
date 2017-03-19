@@ -13,7 +13,8 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show]
 
-  post 'users/:id/profile/bio', to: 'users#bio', as: 'edit_user_bio'
+  put 'users/:id/profile/bio', to: 'users#bio', as: 'edit_user_bio'
+  post 'users/:id/profile/bio', to: 'users#newbio', as: 'user_bio'
   get 'users/:id/profile/picture', to: 'users#picture', as: 'edit_user_picture'
 
   root "home#index"
