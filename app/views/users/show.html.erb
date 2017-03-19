@@ -40,7 +40,7 @@
     </div>
 
     <div class="col-md-6 col2">
-      <div class="hanging"> 
+      <div class="hanging">
         <%= image_tag "languages.png", :class => "hanging" %>
       </div>
       <iframe class="game_modal" src="/learning"></iframe>
@@ -49,7 +49,6 @@
           <%= f.input :body, label: false, autofocus: true, input_html: { 'class': 'text_area'} %>
           <%= f.button :submit, input_html: {'class': 'btn-large btn send_button'}, data: { disable_with: 'Submitting...' } %>
         <% end %>
-        <asp:Button runat="server" ID="btnSaveImage" Text="Save Image" CssClass="Greengradiant btn- large" OnClick="btnSaveImage_Click" UseSubmitBehavior="false" data-dismiss="modal" />
       </div>
 
       <div class="display-none formbio well well-lg bio_box2">
