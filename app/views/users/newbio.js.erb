@@ -1,5 +1,7 @@
-<%# var newDiv = $("<div class="well well-lg bio_box"><%= @profile.bio %1></div>"); %>
+var newDiv = $("<div class='well well-lg bio_box'></div>");
+var remadeBio = $('.bio_box').val();
+newDiv.html(remadeBio);
 
-<%# $('.bio_box').replaceWith(newDiv); %>
+$('.bio_box').replaceWith(newDiv);
 $(".button_to input[name='_method']").val("put");
 $(".button_to input[type='submit']").val("Edit Bio");
