@@ -29,7 +29,9 @@
                 <li>Age: <span><%= @user.age(@user.birthday) %></span></li>
                 <li>Currently Learning: <span><%= @user.languages_studying == "None" ? "None" : @user.languages_studying.to_sentence %></span></li>
               </ul>
-              <button class="btn btn-primary message" role="button">Message <%= @user.full_name %></a></button>
+              <% if current_user != @user %>
+                <button class="btn btn-primary message" role="button">Message <%= @user.full_name %></a></button>
+              <% end %>
             </div>
           </div>
         </div>
@@ -43,8 +45,10 @@
       </div>
       <iframe class="game_modal" src="/learning"></iframe>
       <div class="msg_container">
-        <textarea class="text_area" rows="10" cols="70" name="usrtxt" wrap="hard"></textarea> <br />
-        <button data-dismiss="modal" class="btn  btn-large send_button"> Close</button>
+        <%= simple_form_for @message, remote: true, method: :post, url: user_message_path do |f| %>
+          <%= f.input :body, label: false, autofocus: true, input_html: { 'class': 'text_area'} %>
+          <%= f.button :submit, input_html: {'class': 'btn-large btn send_button'}, data: { disable_with: 'Submitting...' } %>
+        <% end %>
         <asp:Button runat="server" ID="btnSaveImage" Text="Save Image" CssClass="Greengradiant btn- large" OnClick="btnSaveImage_Click" UseSubmitBehavior="false" data-dismiss="modal" />
       </div>
 

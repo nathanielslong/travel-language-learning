@@ -3,6 +3,8 @@ class UsersController < ApplicationController
 
 
   def show
+    @conversation = Conversation.new(sender_id: current_user.id, recipient_id: params[:id])
+    @message = @conversation.messages.new(user_id: @conversation.sender_id)
     @user = User.find(params[:id])
     @profile = Profile.where(user_id: params[:id]).first
     @same_language = User.suggested_users(@user)[0..4]
@@ -25,7 +27,10 @@ class UsersController < ApplicationController
     render 'users/newbio.js.erb'
   end
 
-  def picture
+  def message
+    @conversation = Conversation.new(sender_id: current_user.id, recipient_id: params[:id]).save
+    @message = @conversation.messages.new(user_id: @conversation.sender_id, body: params[:message][:body]).save
+    render 'users/message.js.erb'
   end
 
 end

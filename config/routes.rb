@@ -15,7 +15,8 @@ Rails.application.routes.draw do
 
   put 'users/:id/profile/bio', to: 'users#bio', as: 'edit_user_bio'
   post 'users/:id/profile/bio', to: 'users#newbio', as: 'user_bio'
-  get 'users/:id/profile/picture', to: 'users#picture', as: 'edit_user_picture'
+
+  post 'users/:id/profile/message', to: 'users#message', as: 'user_message'
 
   root "home#index"
 end
