@@ -86,10 +86,6 @@ li {
 .close_modal {
 }
 
-.close_modal:hover {
-  background-color: 
-}
-
 iframe {
   border: 0;
   display: none;
