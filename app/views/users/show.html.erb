@@ -61,7 +61,7 @@
       <div class="well well-lg bio_box"><%= @profile.bio %></div>
       <% if @user == current_user %>
         <%= button_to "Edit Bio", edit_user_bio_path, method: :put, remote: true  %>
-        <button type="button" class="btn btn-success resume_game_button hvr-back-pulse" >START NEW GAME OR RESUME <br />EXISTING GAME!</button>
+        <%= button_to "START NEW GAME", learning_index_path, method: :get, html: { 'class': "btn btn-success resume_game_button hvr-back-pulse" } %>
     </div>
   <% else %>
     <button type="button" class="btn btn-success resume_game_button hvr-back-pulse cant-see" >START NEW GAME OR RESUME <br />EXISTING GAME!</button>

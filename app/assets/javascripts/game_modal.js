@@ -3,7 +3,7 @@ $("document").ready(function(){
   $(".resume_game_button").on("click", function(){
     var modal = new Custombox.modal({
       content: {
-        effect: 'letmein',
+        effect: 'contentscale',
         target: '.game_modal'
       }
     });
@@ -30,4 +30,4 @@ $("document").ready(function(){
     });
     modal.open();
   })
-}
+})
