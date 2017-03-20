@@ -5,7 +5,7 @@ $("document").ready(function(){
 $(".resume_game_button").on("click", function(){
 var modal = new Custombox.modal({
   content: {
-    effect: 'contentscale',
+    effect: 'letmein',
     target: '.game_modal'
   }
 });
