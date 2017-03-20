@@ -28,8 +28,10 @@ class UsersController < ApplicationController
   end
 
   def message
-    @conversation = Conversation.new(sender_id: current_user.id, recipient_id: params[:id]).save
-    @message = @conversation.messages.new(user_id: @conversation.sender_id, body: params[:message][:body]).save
+    @conversation = Conversation.new(sender_id: current_user.id, recipient_id: params[:id])
+    @conversation.save
+    @message = @conversation.messages.new(user_id: @conversation.sender_id, body: params[:message][:body])
+    @message.save
     render 'users/message.js.erb'
   end
 

@@ -10,7 +10,7 @@ body {
 
 .hanging {
   position: relative;
-  bottom: 20px;
+  top: 1px;
   margin: 0 auto;
   width: 450px;
 }
