@@ -46,8 +46,8 @@
       <iframe class="game_modal" src="/learning"></iframe>
       <div class="msg_container">
         <%= simple_form_for @message, remote: true, method: :post, url: user_message_path do |f| %>
-          <%= f.input :body, label: false, autofocus: true, input_html: { 'class': 'text_area'} %>
-          <%= f.button :submit, input_html: {'class': 'btn-large btn send_button'}, data: { disable_with: 'Submitting...' } %>
+          <%= f.input :body, label: false, autofocus: true, input_html: { 'class': 'text_area' } %>
+          <%= f.button :submit, data: { disable_with: 'Submitting...' } %>
         <% end %>
       </div>
 
