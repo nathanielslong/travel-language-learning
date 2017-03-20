@@ -108,8 +108,6 @@ iframe {
 .msg_container {
   display: none;
   margin: 0 auto;
-  position: absolute;
-  left: 15.8px;
   z-index: 10;
 }
 
@@ -121,7 +119,15 @@ iframe {
 
 .bio_box {
   position: relative;
-  bottom: 40px;
+  background-color: rgba(213, 219, 219, 0.7)!important;
+  border-radius: 3px;
+  margin: 0 auto;
+  width: 450px;
+  height: 175px;
+}
+
+.bio_box2 {
+  position: relative;
   background-color: rgba(213, 219, 219, 0.7)!important;
   border-radius: 3px;
   margin: 0 auto;
