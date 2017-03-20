@@ -2,10 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$offset: 60px;
+$offset: 60px; // offset left
 $shifting: 167px;
-
-.body_Bg{
+$offset_top: 160px;
+.body-Bg{
 	background-image: url("animation/bg.svg");
 	z-index: -9999;
 	position: fixed;
@@ -18,73 +18,133 @@ $shifting: 167px;
 	background-repeat:repeat;
 
 	.game {
-		margin-top: 160px;
-		margin-left: $offset ;
 
-		.Robert {
+
+		%Robert_frame {
+			
 			width: 110px;
 			height: 181px;
 			background-image: url("animation/Robert.svg");
-
-
 		}
+
+		.Robert {
+			margin-top: $offset_top;
+			margin-left: 0 ;
+			z-index: -99;
+			position: absolute;
+			left: $offset;
+			@extend %Robert_frame;
+		}
+
 		$class-slug: Robert_station;
 		@for $i from 1 through 4 {
 			.#{$class-slug}#{$i}{
 				position: absolute;
 				left: $i * $shifting + $offset ;
-				width: 110px;
-				height: 181px;
-				background-image: url("animation/Robert.svg");}
+				@extend %Robert_frame;
 			}
+		}
 
-			@for $id from 5 through 8 {
-				.#{$class-slug}#{$id}{
-					position: absolute;
-					top: 420px ;
-					left: (4 * $shifting + $offset) - (($id - 5) * $shifting) ;
-					width: 110px;
-					height: 181px;
-					background-image: url("animation/Robert.svg");}
-				}
-
-				.Robert_station1{
-
-				}
-				
-				.Walk_Right {
-					width: 110px;
-					height: 181px;
-					background-image: url("animation/Walk_Right.svg");
-
-					animation: play .8s steps(6) infinite,  
-					Walk_Right 2.5s linear 1 alternate;
-					animation-fill-mode: forwards; 
-
-				} 
-
-
-				.Walk_Down {
-					width: 110px;
-					height: 181px;
-					background-image: url("animation/Walk_Down.svg");
-
-					animation: play .8s steps(6) infinite,  
-					Walk_Down 2.5s linear 1 alternate; 
-					animation-fill-mode: forwards; 
-				} 
-
-				.Walk_Left {
-					width: 110px;
-					height: 181px;
-					background-image: url("animation/Walk_Left.svg");
-
-					animation: play .8s steps(6) infinite,  
-					Walk_Left 2.5s linear 1 alternate; 
-					animation-fill-mode: forwards; 
-				} 
+		@for $id from 5 through 8 {
+			.#{$class-slug}#{$id}{
+				position: absolute;
+				top: 250px ;
+				left: (4 * $shifting + $offset) - (($id - 5) * $shifting) ;
+				@extend %Robert_frame;
 			}
+		}
+
+			
+		.Walk_Right {
+			width: 110px;
+			height: 181px;
+			background-image: url("animation/Walk_Right.svg");
+
+			animation: play .8s steps(6) infinite,  
+			Walk_Right 2.8s linear 1 alternate;
+			animation-fill-mode: forwards; 
+
 		} 
+
+
+		.Walk_Down {
+			width: 110px;
+			height: 181px;
+			background-image: url("animation/Walk_Down.svg");
+
+			animation: play .8s steps(6) infinite,  
+			Walk_Down 2.8s linear 1 alternate; 
+			animation-fill-mode: forwards; 
+		} 
+
+		.Walk_Left {
+			width: 110px;
+			height: 181px;
+			background-image: url("animation/Walk_Left.svg");
+
+			animation: play .8s steps(6) infinite,  
+			Walk_Left 2.8s linear 1 alternate; 
+			animation-fill-mode: forwards; 
+		} 
+	}
+
+
+	.learning-container{
+		margin-top: 100px;
+		.station-container{ 
+			height: 100vH;
+			// position: fixed;
+			.station-cell{
+				// height: 100vH;
+
+				.station{
+					// height: 100vH;
+					.station-content{						
+					   	.station-content-title{
+							// height: 20vH;
+							font-size: 20px;
+							// text-align: left;
+							color: #8492FB;
+						}
+					}
+					.station-description-container{
+						// width: 80%;
+						// height: 20vH;						
+						.station-description-content{
+
+							.station-description-content-phrases{
+								font-size: 8px;
+								// opacity: 0;
+								 // -webkit-transition: opacity 30s; For Safari 3.1 to 6.0
+							  //   transition: opacity 30s;
+							}
+						}
+					}
+				}
+
+			}
+
+		}
+
+	}
+}
+	
+$class-slug1: station-cell;
+@for $x from 1 through 8 {
+	.#{$class-slug1}#{$x}{
+
+	}
+}
+	.visible{
+		visibility: visible;
+		// display: flex;
+	}	
+
+	
+
+
+
+	
 
 //     -webkit-animation: play 2s steps(5) infinite;
 //        -moz-animation: play 2s steps(5) infinite;
