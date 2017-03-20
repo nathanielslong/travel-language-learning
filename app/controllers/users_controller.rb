@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   end
 
   def splash
-    @disable_footer = true
+
   end
 
   def bio
