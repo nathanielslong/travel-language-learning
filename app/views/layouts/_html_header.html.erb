@@ -14,6 +14,14 @@
         <span class='glyphicon glyphicon-user'></span>
         User Profile
       </li><% end %>
+      <li><%= link_to(destroy_user_session_path, method: :delete) do %>
+        <span class='glyphicon glyphicon-log-out'></span>
+        Log Out
+      </li><% end %>
+  <li><%= link_to conversations_path do %>
+    <span class='glyphicon glyphicon-envelope'></span>
+    Mailbox
+  </li><% end %>
 <% else %>
   <li><%= link_to new_user_registration_path do %>
     <span class='glyphicon glyphicon-user'></span>

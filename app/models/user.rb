@@ -8,6 +8,11 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable
 
+  def age(dob)
+    now = Time.now.utc.to_date
+    now.year - dob.year - ((now.month > dob.month || (now.month == dob.month && now.day >= dob.day)) ? 0 : 1)
+  end
+
   def full_name
     first_name && last_name ? "#{first_name} #{last_name}" : "Anonymous"
   end
@@ -27,11 +32,16 @@ class User < ApplicationRecord
 
     languages = Language.find(user_languages.map(&:language_id))
 
-    [].tap do |studying|
-      languages.each do |language|
-        studying.push(language.name)
+    if languages.length == 0
+      "None"
+    else
+      [].tap do |studying|
+        languages.each do |language|
+          studying.push(language.name)
+        end
       end
     end
+
   end
 
   def self.suggested_users(user)
@@ -40,5 +50,14 @@ class User < ApplicationRecord
     same_userlangs = Userlang.where(language_id: user_languages.map(&:language_id))
 
     users = User.find(same_userlangs.map(&:user_id) - user.conversing_users.map(&:id))
+  end
+
+  def nearby_users
+    origin = self.origin.split(" ")
+    origin = origin.pop()
+
+    formatted_origin = '%' + origin + '%'
+
+    same_location = User.where('origin LIKE ?', formatted_origin ).all
   end
 end

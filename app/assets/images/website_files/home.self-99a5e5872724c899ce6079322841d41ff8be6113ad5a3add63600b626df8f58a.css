@@ -1,0 +1,207 @@
+/* line 1, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.fullscreen_bg {
+  z-index: -9999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://images.designtrends.com/wp-content/uploads/2016/04/04070921/Travel-Wallpaper-Background.png");
+  background-repeat: repeat;
+}
+
+/* line 14, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+#pac-input {
+  margin: 0 auto;
+  width: 200px;
+}
+
+/* line 19, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal-content {
+  text-align: center;
+}
+
+/* line 23, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal-header {
+  font-size: 50px;
+}
+
+/* line 27, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.pac-container {
+  z-index: 10000 !important;
+  display: block !important;
+}
+
+/* line 32, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.pac-container:empty {
+  display: none !important;
+}
+
+/* line 36, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.index {
+  margin-top: 40px;
+}
+
+/* line 40, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal-body p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* line 45, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal-title p {
+  text-align: center;
+}
+
+/* line 49, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal-content p {
+  color: #1abc9c;
+}
+
+/* line 53, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal-content {
+  background-color: #34495E;
+}
+
+/* line 57, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open .dropdown-toggle.btn-default {
+  background-color: #34495E;
+  border: 0px;
+  color: #1abc9c;
+}
+
+/* line 63, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.btn {
+  background-color: #1abc9c;
+  border: 0px;
+  color: #34495E;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+/* line 71, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal-header {
+  border-bottom: 0px solid #1abc9c;
+}
+
+/* line 75, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.btn {
+  border-radius: 0px;
+}
+
+/* line 79, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.panel-body img {
+  width: 100%;
+}
+
+/* line 83, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.panel-title {
+  font-size: 30px;
+}
+
+/* line 87, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal-open {
+  overflow: hidden;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: 0.3s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: 0.3s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: 0.3s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: 0.3s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: 0.3s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* line 101, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal {
+  overflow-y: hidden;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+/* line 113, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+html, body {
+  height: 100%;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+/* line 122, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+code {
+  border-radius: 0px;
+}
+
+/* line 126, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.close, .close:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+/* line 131, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.centering {
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+}
+
+/* line 137, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+
+/* line 142, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+/* line 150, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* line 156, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.body-panel {
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  height: 80%;
+  width: 80%;
+  margin-top: 50px;
+}
+
+/* line 164, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+#map {
+  margin: 0 auto;
+  height: 60%;
+  width: 60%;
+}
+
+/* line 170, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.display-none {
+  display: none;
+}
+
+/* line 174, /Users/samalmeida/Desktop/travel-language-learning/app/assets/stylesheets/home.scss */
+.border {
+  border: 1px solid black;
+  margin: 25px;
+}
